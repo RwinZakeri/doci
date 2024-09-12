@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base */
+@layer base {
+  @font-face {
+    font-family: "IranianSans";
+    src: url("./public/fonts/AIranianSans.eot");
+    src: url("AIranianSans.eot?#iefix") format("embedded-opentype"),
+      url("./public/fonts/AIranianSans.woff2") format("woff2"),
+      url("./public/fonts/AIranianSans.woff") format("woff"),
+      url("./public/fonts/AIranianSans.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IRANSansWebFaNum";
+    src: url("./public/fonts/./public/fonts/iranSansWebFaNum//IRANSansWebFaNum-Medium.eot");
+    src: url("./public/fonts/IRANSansWebFaNum-Medium.eot?#iefix")
+        format("embedded-opentype"),
+      url("./public/fonts/iranSansWebFaNum/IRANSansWebFaNum-Medium.woff2")
+        format("woff2"),
+      url("./public/fonts/iranSansWebFaNum/IRANSansWebFaNum-Medium.woff")
+        format("woff"),
+      url("./public/fonts/iranSansWebFaNum/IRANSansWebFaNum-Medium.ttf")
+        format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    font-family: "IranianSans", sans-serif;
+  }
+  input,
+  select {
+    border: none;
+    outline: none;
+    font-family: "IRANSansWebFaNum", "IranianSans", sans-serif;
+  }
+}
+/* component */
+@layer components {
+  .app {
+    @apply max-w-[1920px] mx-auto;
+  }
+  .iranNum {
+    font-family: "IRANSansWebFaNum";
+  }
+  /* sepratorLine */
+  .sepratorLine {
+    @apply w-full bg-gray-5 h-[1px] mt-5 mb-3;
+  }
+  .lightGrayBorder {
+    @apply border-[1px] border-gray-5;
+  }
+}
