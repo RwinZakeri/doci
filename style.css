@@ -32,7 +32,8 @@
   }
 
   html {
-    font-family: "IranianSans", sans-serif;
+    font-family: "IRANSansWebFaNum", "IranianSans", sans-serif;
+    font-size: 14px;
   }
   input,
   select {
@@ -55,5 +56,11 @@
   }
   .lightGrayBorder {
     @apply border-[1px] border-gray-5;
+  }
+  .meniItemLi {
+    @apply py-1 px-2 border-b-2 border-transparent hover:border-purple-500 transition-all duration-300 text-gray-2;
+  }
+  .meniItemLiActive {
+    @apply border-purple-500;
   }
 }
