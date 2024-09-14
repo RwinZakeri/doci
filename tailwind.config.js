@@ -29,6 +29,11 @@ export default {
         },
         mainWhite: "#ffffff",
       },
+      backgroundImage: {
+        "gradient-homePage": "linear-gradient(to bottom, #C8C3FF, #F5F5FF)",
+        "gradient-homePage-button":
+          "linear-gradient(to right, #A285FF, #7E49FF)",
+      },
       screens: {
         iphoneSe: "400px",
       },
