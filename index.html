@@ -9,7 +9,7 @@
   <body>
     <!-- header -->
     <header
-      class="relative lg:top-12 lg:left-1/2 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 h-[128px] lg:-translate-x-1/2"
+      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 h-[128px] lg:-translate-x-1/2"
     >
       <div class="lg:px-6 p-4 w-full h-full">
         <!-- top part -->
@@ -321,7 +321,7 @@
       ></div>
     </header>
     <div class="app">
-      <div class="bg-gradient-homePage w-full h-screen">
+      <div class="bg-gradient-homePage w-full curver test">
         <div class="px-6 pt-12 w-full">
           <h1 class="text-4xl leading-10">
             داستان برنامه‌نویس شدنت از اینجا شروع میشه!
@@ -341,60 +341,139 @@
           </button>
         </div>
         <!-- card container -->
-        <div class="flex justify-center items-center">
-          <!-- card -->
-         
-          <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-            <swiper-slide>
-              <div class="productCard">
+        <!-- <div
+          class="flex justify-center items-center"
+        > -->
+        <!-- card -->
+
+        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+          <swiper-slide class="productCard">
+            <img src="./public/image/uiux.png" class="block mx-auto" alt="" />
+            <div class="ratingCard">
+              <img src="./public/image/stars.png" alt="rate" />
+              <p>(4.8 امتیاز)</p>
+            </div>
+            <h2>دوره جامع طراحی وب</h2>
+            <p>
+              اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب برای
+              شما بهترین انتخاب برای شروع است!
+            </p>
+            <div class="userInfo">
+              <img src="./public/image/userProf.png" alt="" />
+              <p>مدرس دوره: <span> حمیدرضا قبادی</span></p>
+            </div>
+            <div class="tutorialInfo">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8درس</span>
+              </div>
+              <div>
+                <img src="./public/icons/clock.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
+              </div>
+            </div>
+            <!-- <div class="cardFooter">
+              <p>
+                <span>2,000,000</span>
                 <img
-                  src="./public/image/uiux.png"
-                  class="block mx-auto"
+                  src="./public/icons/toman-icon.svg
+                  "
                   alt=""
                 />
-                <div>
-                  <img src="./public/image/stars.png" alt="rate" />
-                  <p>(4.8 امتیاز)</p>
-                </div>
-                <h2>دوره جامع طراحی وب</h2>
-                <p>
-                  اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
-                  برای شما بهترین انتخاب برای شروع است!
-                </p>
-                <div class="userInfo">
-                  <img src="./public/image/userProf.png" alt="" />
-                  <p>مدرس دوره: <span> حمیدرضا قبادی</span></p>
-                </div>
-                <div class="tutorialInfo">
-                  <div>
-                    <img src="./public/icons/book.svg" alt="" />
-                    <span> 8درس</span>
-                  </div>
-                  <div>
-                    <img src="./public/icons/clock.svg" alt="" />
-                    <span> 23:07 ساعت تدریس</span>
-                  </div>
-                </div>
-                <!-- card footer -->
-                <div class="cardFooter">
-                  <p>
-                    <span>2,000,000</span>
-                    <img
-                      src="./public/icons/toman-icon.svg
+              </p>
+              <p>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+                <span>جزییات دوره</span>
+              </p>
+            </div> -->
+          </swiper-slide>
+          <swiper-slide class="productCard">
+            <img src="./public/image/uiux.png" class="block mx-auto" alt="" />
+            <div>
+              <img src="./public/image/stars.png" alt="rate" />
+              <p>(4.8 امتیاز)</p>
+            </div>
+            <h2>دوره جامع طراحی وب</h2>
+            <p>
+              اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب برای
+              شما بهترین انتخاب برای شروع است!
+            </p>
+            <div class="userInfo">
+              <img src="./public/image/userProf.png" alt="" />
+              <p>مدرس دوره: <span> حمیدرضا قبادی</span></p>
+            </div>
+
+            <div class="tutorialInfo">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8درس</span>
+              </div>
+              <div>
+                <img src="./public/icons/clock.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
+              </div>
+            </div>
+            <!--
+            <div class="cardFooter">
+              <p>
+                <span>2,000,000</span>
+                <img
+                  src="./public/icons/toman-icon.svg
                   "
-                      alt=""
-                    />
-                  </p>
-                  <p>
-                    <img src="./public/icons/arrow-left.svg" alt="" />
-                    <span>جزییات دوره</span>
-                  </p>
-                </div>
-              </div></swiper-slide
-            >
-          </swiper-container>
-        </div>
+                  alt=""
+                />
+              </p>
+              <p>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+                <span>جزییات دوره</span>
+              </p>
+            </div> -->
+          </swiper-slide>
+          <swiper-slide class="productCard">
+            <img src="./public/image/uiux.png" class="block mx-auto" alt="" />
+            <div>
+              <img src="./public/image/stars.png" alt="rate" />
+              <p>(4.8 امتیاز)</p>
+            </div>
+            <h2>دوره جامع طراحی وب</h2>
+            <p>
+              اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب برای
+              شما بهترین انتخاب برای شروع است!
+            </p>
+            <div class="userInfo">
+              <img src="./public/image/userProf.png" alt="" />
+              <p>مدرس دوره: <span> حمیدرضا قبادی</span></p>
+            </div>
+
+            <div class="tutorialInfo">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8درس</span>
+              </div>
+              <div>
+                <img src="./public/icons/clock.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
+              </div>
+            </div>
+            <!--
+            <div class="cardFooter">
+              <p>
+                <span>2,000,000</span>
+                <img
+                  src="./public/icons/toman-icon.svg
+                  "
+                  alt=""
+                />
+              </p>
+              <p>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+                <span>جزییات دوره</span>
+              </p>
+            </div> -->
+          </swiper-slide>
+        </swiper-container>
       </div>
+      <!-- </div> -->
     </div>
     <script src="./scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
