@@ -119,7 +119,7 @@
   }
   .test::before {
     /* before:absolute before:top-0 before:left-0 before:w-full before:h-[70vh]  before:content before:rounded-y-special before:bg-gradient-to-t from-darkBlue to-darkgreen   */
-    content: "";
+    /* content: "";
     width: 100%;
     height: 70vh;
     border-radius: 10%;
@@ -128,7 +128,7 @@
     top: 0;
     left: 0;
     clip-path: ellipse(90% 70% at 50% 70%);
-    transform: rotate(180deg);
+    transform: rotate(180deg); */
     /* background-color: red; */
   }
 }
