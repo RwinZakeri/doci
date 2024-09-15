@@ -9,7 +9,7 @@
   <body>
     <!-- header -->
     <header
-      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 xl:w-autoh-[128px] max-w-[1920px] lg:-translate-x-1/2"
+      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 xl:w-autoh-[128px] max-w-[1536px] lg:-translate-x-1/2"
     >
       <div class="lg:px-6 p-4 w-full h-full">
         <!-- top part -->
@@ -321,12 +321,15 @@
       ></div>
     </header>
     <div class="app">
-      <div class="bg-gradient-homePage w-full curver test">
-        <div class="px-6 pt-12 w-full">
-          <h1 class="text-4xl leading-10">
+      <div class="relative bg-gradient-homePage w-full curver">
+        <div class="lg:block hidden w-full h-[20vh] lg:h-[13vh]"></div>
+        <div
+          class="lg:relative top-[10px] md:top-0 lg:top-[20vh] right-[10%] px-6 pt-12 w-fit"
+        >
+          <h1 class="lg:w-[500px] text-4xl md:text-5xl md:leading-[55px]">
             داستان برنامه‌نویس شدنت از اینجا شروع میشه!
           </h1>
-          <p class="py-6 text-gray-3 text-justify text-lg">
+          <p class="py-6 md:w-96 xl:w-[470px] text-gray-3 text-justify text-lg">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی
           </p>
@@ -346,7 +349,7 @@
         > -->
         <!-- card -->
 
-        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+        <!-- <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
           <swiper-slide class="productCard">
             <img src="./public/image/uiux.png" class="block mx-auto" alt="" />
             <div class="ratingCard">
@@ -372,20 +375,6 @@
                 <span> 23:07 ساعت تدریس</span>
               </div>
             </div>
-            <!-- <div class="cardFooter">
-              <p>
-                <span>2,000,000</span>
-                <img
-                  src="./public/icons/toman-icon.svg
-                  "
-                  alt=""
-                />
-              </p>
-              <p>
-                <img src="./public/icons/arrow-left.svg" alt="" />
-                <span>جزییات دوره</span>
-              </p>
-            </div> -->
           </swiper-slide>
           <swiper-slide class="productCard">
             <img src="./public/image/uiux.png" class="block mx-auto" alt="" />
@@ -413,21 +402,6 @@
                 <span> 23:07 ساعت تدریس</span>
               </div>
             </div>
-            <!--
-            <div class="cardFooter">
-              <p>
-                <span>2,000,000</span>
-                <img
-                  src="./public/icons/toman-icon.svg
-                  "
-                  alt=""
-                />
-              </p>
-              <p>
-                <img src="./public/icons/arrow-left.svg" alt="" />
-                <span>جزییات دوره</span>
-              </p>
-            </div> -->
           </swiper-slide>
           <swiper-slide class="productCard">
             <img src="./public/image/uiux.png" class="block mx-auto" alt="" />
@@ -455,80 +429,74 @@
                 <span> 23:07 ساعت تدریس</span>
               </div>
             </div>
-            <!--
-            <div class="cardFooter">
-              <p>
-                <span>2,000,000</span>
-                <img
-                  src="./public/icons/toman-icon.svg
-                  "
-                  alt=""
-                />
-              </p>
-              <p>
-                <img src="./public/icons/arrow-left.svg" alt="" />
-                <span>جزییات دوره</span>
-              </p>
-            </div> -->
           </swiper-slide>
-        </swiper-container>
+        </swiper-container> -->
+
+        <img
+          src="./public/image/shockedwoman.png"
+          class="top-[21%] left-1/2 absolute w-[450px] -translate-x-1/2"
+          alt=""
+        />
+        <div class="w-full h-[40vh]"></div>
         <!-- about -->
         <div
-          class="flex lg:flex-row flex-col flex-nowrap justify-center items-center bg-purple-500 mx-auto p-6 rounded-[32px] w-fit xl:w-4/5 h-full"
+          class="relative z-10 flex lg:flex-row flex-col flex-nowrap justify-center items-center xl:gap-8 bg-purple-500 mx-auto p-0 md:p-6 rounded-[32px] w-fit xl:w-4/5 h-full"
         >
-          <div class="xl:flex">
+          <div class="xl:flex gap-8">
             <div
-              class="border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite"
+              class="border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite xl:text-start"
             >
               <img
-                src="./public/icons/about-user--ico.svg"
+                src="./public/icons/about-medal.svg"
                 alt=""
-                class="block mx-auto"
+                class="block xl:inline-block mx-auto w-[86px]"
               />
-              <h2 class="text-lg">اساتید مجرب و ماهر</h2>
-              <p class="py-2 w-96 xl:w-auto">
+              <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+              <p class="2xl:px-5 py-2 w-96 xl:w-auto">
                 توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه
                 و مختصر در خصوص این ویژگی
               </p>
             </div>
             <div
-              class="xl:text-right border-purple-400 xl:bg-red-500 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite"
+              class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite"
             >
               <img
                 src="./public/icons/about-user--ico.svg"
                 alt=""
-                class="block mx-auto"
+                class="block xl:inline-block mx-auto"
               />
-              <h2 class="text-lg">اساتید مجرب و ماهر</h2>
-              <p class="py-2 w-96 xl:w-auto">
+              <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+              <p class="2xl:px-5 py-2 w-96 xl:w-auto">
                 توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه
                 و مختصر در خصوص این ویژگی
               </p>
             </div>
           </div>
-          <div class="xl:flex">
+          <div class="xl:flex gap-8">
             <div
-              class="border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 xl:border-l-2 text-center text-mainWhite"
+              class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 xl:border-l-2 text-center text-mainWhite"
             >
               <img
-                src="./public/icons/about-user--ico.svg"
+                src="./public/icons/about-samunet-ico.svg"
                 alt=""
-                class="block mx-auto"
+                class="block xl:inline-block mx-auto"
               />
-              <h2 class="text-lg">اساتید مجرب و ماهر</h2>
-              <p class="py-2 w-96 xl:w-auto">
+              <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+              <p class="2xl:px-5 py-2 w-96 xl:w-auto">
                 توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه
                 و مختصر در خصوص این ویژگی
               </p>
             </div>
-            <div class="lg:p-10 xl:p-0 lg:pb-2 text-center text-mainWhite">
+            <div
+              class="xl:text-right px-2 lg:p-10 xl:p-0 lg:pb-2 text-center text-mainWhite"
+            >
               <img
                 src="./public/icons/about-user--ico.svg"
                 alt=""
-                class="block mx-auto"
+                class="block xl:inline-block mx-auto"
               />
-              <h2 class="text-lg">اساتید مجرب و ماهر</h2>
-              <p class="py-2 w-96 xl:w-auto">
+              <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+              <p class="2xl:px-5 py-2 w-96 xl:w-auto">
                 توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه
                 و مختصر در خصوص این ویژگی
               </p>
@@ -537,7 +505,6 @@
         </div>
         <div class="bg-red-400 w-full h-64"></div>
       </div>
-
       <!-- </div> -->
     </div>
     <script src="./scripts/index.js"></script>
