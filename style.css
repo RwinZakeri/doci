@@ -131,6 +131,56 @@
     transform: rotate(180deg); */
     /* background-color: red; */
   }
+  .newestBtn {
+    @apply bg-mainWhite px-2 sm:px-6 py-3 rounded-full text-gray-2;
+  }
+  .activeNewestBtn {
+    @apply bg-purple-500 text-mainWhite;
+  }
+  .tutorialCard {
+    @apply p-6 bg-mainWhite w-fit rounded-2xl flex flex-col items-center justify-center;
+    .TutoCardImgContainer {
+      @apply max-w-80;
+    }
+    .TutoCardRateContainer {
+      @apply flex items-end gap-2 pt-2;
+      span {
+        @apply text-xs leading-3;
+      }
+    }
+    .TutoCardDetailTuto {
+      h3 {
+        @apply text-2xl py-4;
+      }
+      p {
+        @apply max-w-80 text-gray-2;
+      }
+    }
+    .TutoCardTeacherDetail {
+      @apply flex items-center gap-2 py-3;
+    }
+    .TutoCardTeacheDetail {
+      @apply flex gap-3 items-center pb-5 border-b-2 border-purple-200 border-dashed;
+      div {
+        @apply bg-purple-100 w-fit flex gap-2 text-xs px-2 py-0.5 rounded-lg;
+        img {
+          @apply w-6;
+        }
+        span {
+          @apply leading-[20px];
+        }
+      }
+    }
+    .CardFooter {
+      @apply flex items-center justify-between pt-4;
+      div {
+        @apply flex gap-2;
+        &:nth-child(2) {
+          @apply text-gray-3;
+        }
+      }
+    }
+  }
 }
 swiper-container {
   width: 260px;
@@ -148,76 +198,3 @@ swiper-slide:nth-child(2n) {
 swiper-slide:nth-child(3n) {
   background-color: rgb(10, 184, 111);
 }
-
-/* 
-
-
-h2 {
-  max-height: 64px;
-  padding: 10px 0px;
-  @apply text-xl text-gray-1;
-}
-p {
-  @apply text-gray-3 w-[275px] text-justify text-lg;
-}
-.userInfo {
-  width: 100%;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  padding: 0;
-  margin: 10px 0;
-  img {
-    width: 32px;
-    height: 32px;
-    border-radius: 100%;
-  }
-  p {
-    @apply text-gray-3;
-    span {
-      @apply text-gray-1 text-balance;
-      margin: 0px 5px;
-    }
-  }
-}
-.tutorialInfo {
-  width: 100%;
-  height: 24px;
-  padding: 0;
-  div {
-    height: 100%;
-    padding: 0;
-
-    gap: 5px;
-    @apply bg-purple-300 text-gray-2 px-3 py-2 rounded-md;
-  }
-  img {
-    width: 16px;
-    height: 16px;
-  }
-}
-.cardFooter {
-  margin: 0;
-  padding: 0;
-  @apply w-full  h-8 mt-5;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  p:nth-of-type(1) {
-    @apply text-xl text-gray-1 h-full;
-  }
-  p:nth-of-type(2) {
-    @apply justify-end text-lg;
-  }
-  p {
-    display: flex;
-    align-items: center;
-    justify-items: flex-end;
-
-    gap: 5px;
-    img {
-      width: 24px;
-    }
-  }
-} */

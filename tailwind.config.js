@@ -36,6 +36,7 @@ export default {
         redIco: "#FBE7EF",
         orangeIco: "#FBEEE7",
         mainWhite: "#ffffff",
+        lightBgPurple: "#F5F5FF",
       },
       backgroundImage: {
         "gradient-homePage": "linear-gradient(to bottom, #C8C3FF, #F5F5FF)",
