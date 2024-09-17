@@ -37,6 +37,7 @@ export default {
         orangeIco: "#FBEEE7",
         mainWhite: "#ffffff",
         lightBgPurple: "#F5F5FF",
+        mainWhiteSmoke: "#f5f5f5",
       },
       backgroundImage: {
         "gradient-homePage": "linear-gradient(to bottom, #C8C3FF, #F5F5FF)",

@@ -181,20 +181,40 @@
       }
     }
   }
+  .masterCard {
+    @apply bg-mainWhite w-fit p-5 rounded-xl;
+    .masterCardImage {
+      @apply max-w-80;
+    }
+    .socialIcoContainer {
+      @apply flex justify-center items-center gap-2 mt-3 w-full;
+      div {
+        img {
+          @apply w-12 rounded-full;
+        }
+      }
+    }
+    .masterMoreInfo {
+      @apply flex justify-center items-center gap-2 mt-4 w-full;
+    }
+  }
+  .blogCard {
+    @apply bg-mainWhite rounded-xl w-fit p-4 flex items-center justify-center flex-col relative shadow-2xl  ;
+    img {
+      @apply max-w-80;
+    }
+    div {
+      @apply text-lg  max-w-80 font-extrabold text-gray-0 text-right py-8;
+      p {
+        @apply text-xl leading-[35px];
+      }
+    }
+    .blogIco {
+      @apply absolute -bottom-5 left-10;
+    }
+  }
 }
 swiper-container {
-  width: 260px;
+  @apply w-3/5;
   /* height: 320px; */
-}
-
-swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
-}
-
-swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
-}
-
-swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
 }
