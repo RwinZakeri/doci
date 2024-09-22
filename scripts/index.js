@@ -32,10 +32,16 @@ tutorialsSidebarBtn.addEventListener("click", () => {
 const tutorialSidebar = document.getElementById("tutorialSidebar");
 const arrowIcon = document.getElementById("arrowIcon");
 arrowIcon.addEventListener("click", () => {
+  console.log(arrowIcon.children[2].src);
   if (arrowIcon.children[2].classList.contains("rotate-0")) {
     arrowIcon.children[2].classList.replace("rotate-0", "rotate-180");
+    console.log(arrowIcon.children[2].src);
+    arrowIcon.children[2].src = "../public/icons/arrow-up.svg";
+    // arrowIcon.children[2].classList.replace("");
     tutorialSidebar.classList.replace("hidden", "block");
   } else {
+    arrowIcon.children[2].src = "../public/icons/arrow-down.svg";
+
     arrowIcon.children[2].classList.replace("rotate-180", "rotate-0");
     tutorialSidebar.classList.replace("block", "hidden");
   }

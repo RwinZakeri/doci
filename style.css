@@ -37,6 +37,9 @@
     font-family: "IRANSansWebFaNum", "IranianSans", sans-serif;
     font-size: 14px;
   }
+  body {
+    @apply max-w-[1920px] mx-auto;
+  }
   input,
   select {
     border: none;
@@ -46,9 +49,6 @@
 }
 /* component */
 @layer components {
-  .app {
-    @apply max-w-[1920px] mx-auto;
-  }
   .iranNum {
     font-family: "IRANSansWebFaNum";
   }
@@ -65,72 +65,7 @@
   .meniItemLiActive {
     @apply border-purple-500;
   }
-  .productCard {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    img {
-      width: 100%;
-    }
-    .ratingCard {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 10px;
-      padding-top: 10px;
-      margin-top: 5px;
-      @apply text-sm text-gray-3;
-      img {
-        width: 90px;
-      }
-      p {
-        height: 14px;
-      }
-    }
-    .userInfo {
-      width: 100%;
-      height: 2rem;
-      display: flex;
-      align-items: center;
-      justify-items: center;
-      padding: 0;
-      margin: 10px 0;
-      img {
-        width: 32px;
-        height: 32px;
-        border-radius: 100%;
-      }
-      p {
-        @apply text-gray-3;
-        span {
-          @apply text-gray-1 text-balance;
-          margin: 0px 5px;
-        }
-      }
-    }
-    .tutorialInfo {
-      img {
-        width: 16px;
-        height: 16px;
-      }
-    }
-  }
-  .curver {
-  }
-  .test::before {
-    /* before:absolute before:top-0 before:left-0 before:w-full before:h-[70vh]  before:content before:rounded-y-special before:bg-gradient-to-t from-darkBlue to-darkgreen   */
-    /* content: "";
-    width: 100%;
-    height: 70vh;
-    border-radius: 10%;
 
-    position: absolute;
-    top: 0;
-    left: 0;
-    clip-path: ellipse(90% 70% at 50% 70%);
-    transform: rotate(180deg); */
-    /* background-color: red; */
-  }
   .newestBtn {
     @apply bg-mainWhite px-2 sm:px-6 py-3 rounded-full text-gray-2;
   }
@@ -138,7 +73,7 @@
     @apply bg-purple-500 text-mainWhite;
   }
   .tutorialCard {
-    @apply p-6 bg-mainWhite w-fit rounded-2xl flex flex-col items-center justify-center;
+    @apply p-6 bg-mainWhite w-fit rounded-2xl flex flex-col items-center justify-center text-right;
     .TutoCardImgContainer {
       @apply max-w-80;
     }
@@ -199,7 +134,7 @@
     }
   }
   .blogCard {
-    @apply bg-mainWhite rounded-xl w-fit p-4 flex items-center justify-center flex-col relative shadow-2xl  ;
+    @apply bg-mainWhite rounded-xl w-fit p-4 flex items-center justify-center flex-col relative shadow-2xl;
     img {
       @apply max-w-80;
     }
@@ -217,4 +152,15 @@
 swiper-container {
   @apply w-3/5;
   /* height: 320px; */
+}
+
+@keyframes scrollDown {
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+.scrollAnimate {
+  animation-name: scrollDown;
+  animation-duration: 500ms;
 }

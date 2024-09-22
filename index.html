@@ -9,13 +9,12 @@
   <body>
     <!-- header -->
     <header
-      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 xl:w-autoh-[128px] max-w-[1536px] lg:-translate-x-1/2"
+      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 lg:-translate-x-1/2"
     >
       <div class="lg:px-6 p-4 w-full h-full">
         <!-- top part -->
         <div class="flex justify-between items-center w-full">
           <!-- right -->
-
           <div class="flex justify-between items-center gap-2">
             <button id="sidebarBtn" class="lg:hidden">
               <img src="./public/icons/burgurmenu.svg" alt="" />
@@ -75,7 +74,11 @@
           >
             <img src="./public/icons/foursquare.svg" alt="دوره های آموزشی" />
             <p>دوره های آموزشی</p>
-            <img src="./public/icons/arrow-down.svg" class="rotate-0" alt="" />
+            <img
+              src="./public/icons/arrow-down.svg"
+              class="max-w-6 rotate-0"
+              alt=""
+            />
           </div>
           <!-- desktop nav -->
           <nav class="lg:block hidden">
@@ -136,7 +139,7 @@
         </div>
         <!-- desktop tutorial sidebar  -->
         <div
-          class="top-[110%] left-0 absolute hidden bg-mainWhite p-10 rounded-[32px] w-full h-[536px]"
+          class="top-[110%] left-0 absolute hidden bg-mainWhite p-10 rounded-[32px] w-full h-[536px] scrollAnimate"
           id="tutorialSidebar"
         >
           <div
@@ -320,44 +323,41 @@
         id="blurDiv"
       ></div>
     </header>
-    <div class="app">
-      <div class="relative bg-gradient-homePage w-full h-[900px]">
-        <!-- <div class="lg:block hidden w-full h-[20vh] lg:h-[13vh]"></div> -->
-        <!-- container -->
-        <!-- relative flex bg- bg-yellow-200 mx-auto lg:pt-52 lg:w-4/5  -->
-        <div class="mx-auto lg:pt-72 lg:w-4/5 h-[100%]">
-          <img
-            src="./public/image/shockedwoman.png"
-            class="xl:block bottom-0 left-1/2 -z-1 absolute hidden w-[450px] -translate-x-1/2"
-            alt=""
-          />
-          <div class="relative px-6 pt-12 xl:w-1/2 h-full">
-            <h1 class="lg:w-[500px] text-4xl md:text-5xl md:leading-[55px]">
-              داستان برنامه‌نویس شدنت از اینجا شروع میشه!
-            </h1>
-            <p
-              class="py-6 md:w-96 xl:w-[470px] text-gray-3 text-justify text-lg"
-            >
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی
-            </p>
-            <button
-              class="flex justify-center items-center gap-2 bg-gradient-homePage-button p-[9px] rounded-[35px] w-[212px] h-[48px] text-lg text-mainWhite"
-            >
-              انتخاب دوره آموزشی
-              <img
-                src="./public/icons/arrow-left-white.svg"
-                alt=" انتخاب دوره آموزشی"
-              />
-            </button>
-          </div>
-          <!-- card container -->
-          <!-- <div
+    <div class="relative bg-gradient-homePage w-full h-[900px]">
+      <!-- <div class="lg:block hidden w-full h-[20vh] lg:h-[13vh]"></div> -->
+      <!-- container -->
+      <!-- relative flex bg- bg-yellow-200 mx-auto lg:pt-52 lg:w-4/5  -->
+      <div class="mx-auto lg:pt-72 lg:w-4/5 h-[100%]">
+        <img
+          src="./public/image/shockedwoman.png"
+          class="xl:block bottom-0 left-1/2 -z-1 absolute hidden w-[450px] -translate-x-1/2"
+          alt=""
+        />
+        <div class="relative px-6 pt-12 xl:w-1/2 h-full">
+          <h1 class="lg:w-[500px] text-4xl md:text-5xl md:leading-[55px]">
+            داستان برنامه‌نویس شدنت از اینجا شروع میشه!
+          </h1>
+          <p class="py-6 md:w-96 xl:w-[470px] text-gray-3 text-justify text-lg">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی
+          </p>
+          <button
+            class="flex justify-center items-center gap-2 bg-gradient-homePage-button p-[9px] rounded-[35px] w-[212px] h-[48px] text-lg text-mainWhite"
+          >
+            انتخاب دوره آموزشی
+            <img
+              src="./public/icons/arrow-left-white.svg"
+              alt=" انتخاب دوره آموزشی"
+            />
+          </button>
+        </div>
+        <!-- card container -->
+        <!-- <div
           class="flex justify-center items-center"
         > -->
-          <!-- card -->
+        <!-- card -->
 
-          <!-- <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+        <!-- <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
           <swiper-slide class="productCard">
             <img src="./public/image/uiux.png" class="block mx-auto" alt="" />
             <div class="ratingCard">
@@ -440,477 +440,413 @@
           </swiper-slide>
         </swiper-container> -->
 
-          <!-- <img
+        <!-- <img
           src="./public/image/shockedwoman.png"
           class="lg:inline-block top-[150px] left-1/2 absolute hidden w-[450px] -translate-x-1/2"
           alt=""
         /> -->
-          <!-- <div class="w-full h-[40vh]"></div> -->
-        </div>
-        <!-- about -->
-
-        <!-- <div class="bg-red-400 w-full h-64"></div> -->
+        <!-- <div class="w-full h-[40vh]"></div> -->
       </div>
-      <!-- about -->
-      <div
-        class="relative -top-16 z-0 flex lg:flex-row flex-col flex-nowrap justify-center items-center xl:gap-8 bg-purple-500 mx-auto p-0 md:p-6 rounded-[32px] w-fit xl:w-4/5 h-full"
-      >
-        <div class="xl:flex gap-8">
-          <div
-            class="border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite xl:text-start"
-          >
-            <img
-              src="./public/icons/about-medal.svg"
-              alt=""
-              class="block xl:inline-block mx-auto w-[86px]"
-            />
-            <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-            <p class="2xl:px-5 py-2 w-96 xl:w-auto">
-              توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
-              مختصر در خصوص این ویژگی
-            </p>
-          </div>
-          <div
-            class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite"
-          >
-            <img
-              src="./public/icons/about-user--ico.svg"
-              alt=""
-              class="block xl:inline-block mx-auto"
-            />
-            <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-            <p class="2xl:px-5 py-2 w-96 xl:w-auto">
-              توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
-              مختصر در خصوص این ویژگی
-            </p>
-          </div>
-        </div>
-        <div class="xl:flex gap-8">
-          <div
-            class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 xl:border-l-2 text-center text-mainWhite"
-          >
-            <img
-              src="./public/icons/about-samunet-ico.svg"
-              alt=""
-              class="block xl:inline-block mx-auto"
-            />
-            <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-            <p class="2xl:px-5 py-2 w-96 xl:w-auto">
-              توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
-              مختصر در خصوص این ویژگی
-            </p>
-          </div>
-          <div
-            class="xl:text-right px-2 lg:p-10 xl:p-0 lg:pb-2 text-center text-mainWhite"
-          >
-            <img
-              src="./public/icons/about-user--ico.svg"
-              alt=""
-              class="block xl:inline-block mx-auto"
-            />
-            <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-            <p class="2xl:px-5 py-2 w-96 xl:w-auto">
-              توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
-              مختصر در خصوص این ویژگی
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- categories -->
-      <div class="px-6 pt-12 w-full text-center">
-        <p
-          class="bg-purple-100 mx-auto mb-4 px-3 py-1.5 rounded-[26px] w-fit text-center text-gray-2 text-sm"
+    </div>
+    <!-- about -->
+    <div
+      class="relative -top-16 lg:-top-32 z-0 flex lg:flex-row flex-col flex-nowrap justify-center items-center xl:gap-8 bg-purple-500 mx-auto p-0 md:p-6 rounded-[32px] w-fit xl:w-4/5 h-full"
+    >
+      <div class="xl:flex gap-8">
+        <div
+          class="border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite xl:text-start"
         >
-          موضوعات آموزش
+          <img
+            src="./public/icons/about-medal.svg"
+            alt=""
+            class="block xl:inline-block mx-auto w-[86px]"
+          />
+          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+            توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
+            مختصر در خصوص این ویژگی
+          </p>
+        </div>
+        <div
+          class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite"
+        >
+          <img
+            src="./public/icons/about-user--ico.svg"
+            alt=""
+            class="block xl:inline-block mx-auto"
+          />
+          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+            توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
+            مختصر در خصوص این ویژگی
+          </p>
+        </div>
+      </div>
+      <div class="xl:flex gap-8">
+        <div
+          class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 xl:border-l-2 text-center text-mainWhite"
+        >
+          <img
+            src="./public/icons/about-samunet-ico.svg"
+            alt=""
+            class="block xl:inline-block mx-auto"
+          />
+          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+            توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
+            مختصر در خصوص این ویژگی
+          </p>
+        </div>
+        <div
+          class="xl:text-right px-2 lg:p-10 xl:p-0 lg:pb-2 text-center text-mainWhite"
+        >
+          <img
+            src="./public/icons/about-user--ico.svg"
+            alt=""
+            class="block xl:inline-block mx-auto"
+          />
+          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
+          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+            توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
+            مختصر در خصوص این ویژگی
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- categories -->
+    <p
+      class="bg-purple-100 mx-auto mb-4 px-3 py-1.5 rounded-[26px] w-fit text-center text-gray-2 text-sm"
+    >
+      موضوعات آموزش
+    </p>
+    <h2 class="my-8 text-3xl leading-[35px]">
+      آموزش های آدور شامل چه مباحثی می شود؟!
+    </h2>
+    <!-- tutorials -->
+    <div
+      class="justify-between gap-6 grid grid-cols-2 xl:grid-cols-4 mx-auto w-full lg:w-3/5 h-full"
+    >
+      <div
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+      >
+        <img
+          src="./public/icons/terminalIco.svg"
+          class="box-content bg-greenIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
-        <h2 class="my-8 text-3xl leading-[35px]">
-          آموزش های آدور شامل چه مباحثی می شود؟!
-        </h2>
-        <!-- tutorials -->
-        <div
-          class="justify-between gap-6 grid grid-cols-2 xl:grid-cols-4 mx-auto w-full lg:w-3/5 h-full"
-        >
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/terminalIco.svg"
-              class="box-content bg-greenIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/brainIco.svg"
-              class="box-content bg-blueIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/moneyIco.svg"
-              class="box-content bg-goldIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/movieIco.svg"
-              class="box-content bg-purpleIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/uiuxico.svg"
-              class="box-content bg-redIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/computerico.svg"
-              class="box-content bg-goldIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/searchIco-menu.svg"
-              class="box-content bg-lowGreenIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
-          >
-            <img
-              src="./public/icons/wordpressico.svg"
-              class="box-content bg-blueIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
-              alt=""
-            />
-            <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
-            <p class="flex items-center gap-2 text-gray-2">
-              <span>23 دوره</span
-              ><img src="./public/icons/arrow-left.svg" alt="" />
-            </p>
-          </div>
-        </div>
       </div>
-      <!-- sign up -->
-      <!-- <div
-        class="relative flex xl:flex-row flex-col-reverse justify-around bg-purple-500 mt-24 px-6 lg:px-8 py-20 w-full text-mainWhite"
-      >
-        <div class="w-full h-full">
-          <div class="bg-yellow-300 w-full h-96 xl:h-0">
-            <img
-              src="./public/image/clean-code.png"
-              class="right-5 bottom-20 absolute md:w-[500px] md:-translate-x-1/2 2xl:-translate-x-1/2 xl:translate-x-0"
-              alt=""
-            />
-
-            <img
-              src="./public/image/smallpngs.png"
-              class="right-7 md:right-1/2 bottom-0 absolute w-[533px] md:w-[330px] md:translate-x-1/2"
-              alt=""
-            />
-
-            <img
-              src="./public/image/whiteTable.png"
-              alt=""
-              class="right-7 l:right-52 md:right-1/2 2xl:right-52 bottom-0 absolute lg:bg-red-300 w-[333px] md:w-[330px] md:-translate-x-1/2"
-            />
-          </div>
-        </div>
-        <div>
-          <h3 class="mb-4 text-4xl text-mainWhite leading-[50px]">
-            از ثبت نام دوره جدید طراحی سایت جا نمونی!
-          </h3>
-          <div class="w-full">
-            <div class="lg:flex gap-16 w-full">
-              <div class="flex items-center gap-2 py-3 lg:text-xl">
-                <img src="./public/icons/clock.svg" alt="" />
-                <p>12 ساعت آموزش</p>
-              </div>
-              <div class="flex items-center gap-2 py-3 lg:text-xl">
-                <img src="./public/icons/headphoneico.svg" alt="" />
-                <p>پشتیبانی 6 ماه رایگان</p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 py-3 lg:text-xl">
-              <img src="./public/icons/systemico.svg" alt="" />
-              <p>امکان حضور در کلاس به صورت آنلاین</p>
-            </div>
-            <button
-              class="bg-mainWhite my-3 mb-24 lg:mb-0 px-5 py-3 rounded-[35px] text-lg text-purple-500"
-            >
-              همین حالا ثبت نام کن!
-            </button>
-          </div>
-        </div>
-      </div> -->
       <div
-        class="flex lg:flex-row flex-col-reverse justify-center items-end gap-3 bg-purple-500 mt-52 px-8 pt-12 w-full"
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
       >
-        <div class="relative w-full lg:w-1/2 xl:w-1/3 h-full">
-          <img
-            src="./public/image/clean-code.png"
-            class="relative -top-28 right-1/2 lg:right-10 z-10 translate-x-1/2 lg:translate-x-0"
-            alt=""
-          />
+        <img
+          src="./public/icons/brainIco.svg"
+          class="box-content bg-blueIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+      >
+        <img
+          src="./public/icons/moneyIco.svg"
+          class="box-content bg-goldIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+      >
+        <img
+          src="./public/icons/movieIco.svg"
+          class="box-content bg-purpleIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+      >
+        <img
+          src="./public/icons/uiuxico.svg"
+          class="box-content bg-redIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+      >
+        <img
+          src="./public/icons/computerico.svg"
+          class="box-content bg-goldIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+      >
+        <img
+          src="./public/icons/searchIco-menu.svg"
+          class="box-content bg-lowGreenIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
+        </p>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+      >
+        <img
+          src="./public/icons/wordpressico.svg"
+          class="box-content bg-blueIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          alt=""
+        />
+        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <p class="flex items-center gap-2 text-gray-2">
+          <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
+        </p>
+      </div>
+    </div>
+    <!-- sign up -->
+    <div
+      class="flex lg:flex-row flex-col-reverse justify-center items-end gap-3 bg-purple-500 mt-52 px-8 pt-12 w-full"
+    >
+      <div class="relative w-full lg:w-1/2 xl:w-1/3 h-full">
+        <img
+          src="./public/image/clean-code.png"
+          class="relative -top-28 right-1/2 lg:right-10 z-10 translate-x-1/2 lg:translate-x-0"
+          alt=""
+        />
 
-          <img
-            src="./public/image/smallpngs.png"
-            class="right-1/2 lg:right-0 bottom-0 absolute translate-x-1/2 lg:translate-x-0"
-            alt=""
-          />
+        <img
+          src="./public/image/smallpngs.png"
+          class="right-1/2 lg:right-0 bottom-0 absolute translate-x-1/2 lg:translate-x-0"
+          alt=""
+        />
 
-          <img
-            src="./public/image/whiteTable.png"
-            class="right-1/2 lg:right-0 -bottom-0 absolute translate-x-1/2 lg:translate-x-0"
-            alt=""
-          />
-        </div>
-        <div class="pb-8 w-full lg:w-1/2 xl:w-1/3 h-full text-mainWhite">
-          <h3 class="mb-4 text-4xl leading-[50px]">
-            از ثبت نام دوره جدید طراحی سایت جا نمونی!
-          </h3>
-          <div class="w-full">
-            <div class="lg:flex gap-16 w-full">
-              <div class="flex items-center gap-2 py-3 lg:text-xl">
-                <img src="./public/icons/clock.svg" alt="" />
-                <p>12 ساعت آموزش</p>
-              </div>
-              <div class="flex items-center gap-2 py-3 lg:text-xl">
-                <img src="./public/icons/headphoneico.svg" alt="" />
-                <p>پشتیبانی 6 ماه رایگان</p>
-              </div>
+        <img
+          src="./public/image/whiteTable.png"
+          class="right-1/2 lg:right-0 -bottom-0 absolute translate-x-1/2 lg:translate-x-0"
+          alt=""
+        />
+      </div>
+      <div class="pb-8 w-full lg:w-1/2 xl:w-1/3 h-full text-mainWhite">
+        <h3 class="mb-4 text-4xl leading-[50px]">
+          از ثبت نام دوره جدید طراحی سایت جا نمونی!
+        </h3>
+        <div class="w-full">
+          <div class="lg:flex gap-16 w-full">
+            <div class="flex items-center gap-2 py-3 lg:text-xl">
+              <img src="./public/icons/clock.svg" alt="" />
+              <p>12 ساعت آموزش</p>
             </div>
             <div class="flex items-center gap-2 py-3 lg:text-xl">
-              <img src="./public/icons/systemico.svg" alt="" />
-              <p>امکان حضور در کلاس به صورت آنلاین</p>
+              <img src="./public/icons/headphoneico.svg" alt="" />
+              <p>پشتیبانی 6 ماه رایگان</p>
             </div>
-            <button
-              class="bg-mainWhite my-3 mb-24 lg:mb-0 px-5 py-3 rounded-[35px] text-lg text-purple-500"
-            >
-              همین حالا ثبت نام کن!
-            </button>
+          </div>
+          <div class="flex items-center gap-2 py-3 lg:text-xl">
+            <img src="./public/icons/systemico.svg" alt="" />
+            <p>امکان حضور در کلاس به صورت آنلاین</p>
+          </div>
+          <button
+            class="bg-mainWhite my-3 mb-24 lg:mb-0 px-5 py-3 rounded-[35px] text-lg text-purple-500"
+          >
+            همین حالا ثبت نام کن!
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- newest -->
+    <div class="bg-lightBgPurple pb-20 w-full">
+      <div
+        class="flex flex-col justify-center items-center md:items-start md:gap-6 bg-red-500 mx-auto px-8 lg:px-0 py-12 w-full lg:w-4/5"
+      >
+        <div>
+          <div
+            class="bg-mainWhite px-4 py-[12px] rounded-[26px] w-fit text-gray-2"
+          >
+            <p>جدیدترین دوره ها</p>
+          </div>
+        </div>
+        <div class="my-4 text-3xl text-center lg:text-4xl leading-[40px]">
+          <h2>جدید ترین دوره های آدور رو از دست نده!</h2>
+        </div>
+        <div
+          class="flex justify-center md:justify-between items-center gap-4 w-full"
+        >
+          <div class="flex">
+            <div class="newestBtn"><p>پرفروش ترین ها</p></div>
+            <div class="newestBtn"><p>محبوب ترین ها</p></div>
+            <div class="activeNewestBtn newestBtn"><p>جدیدترین ها</p></div>
+          </div>
+          <div class="relative md:flex items-center gap-3 hidden text-gray-2">
+            <p class="relative z-10">مشاهده همه دوره ها</p>
+            <img src="./public/icons/arrow-left.svg" alt="" />
+            <div
+              class="-right-5 -z-1 absolute bg-purple-300 rounded-full w-[56px] h-[56px]"
+            ></div>
           </div>
         </div>
       </div>
-      <!-- newest -->
-      <div class="bg-lightBgPurple w-full">
-        <div
-          class="flex flex-col justify-center items-center md:items-start md:gap-6 mx-auto px-8 lg:px-0 pt-40 w-full lg:w-4/5"
-        >
+      <!-- cards container -->
+      <div
+        class="flex flex-wrap justify-center items-center gap-8 bg-lightBgPurple mt-12 w-full"
+      >
+        <!-- card -->
+        <div class="tutorialCard">
+          <div class="TutoCardImgContainer">
+            <img src="./public/image/uiux.png" alt="" />
+          </div>
           <div>
-            <div
-              class="bg-mainWhite px-4 py-[12px] rounded-[26px] w-fit text-gray-2"
-            >
-              <p>جدیدترین دوره ها</p>
+            <div class="TutoCardRateContainer">
+              <img src="./public/image/stars.png" alt="" />
+              <span>(4.8 امتیاز)</span>
             </div>
-          </div>
-          <div class="my-4 text-3xl text-center lg:text-4xl leading-[40px]">
-            <h2>جدید ترین دوره های آدور رو از دست نده!</h2>
-          </div>
-          <div
-            class="flex justify-center md:justify-between items-center gap-4 w-full"
-          >
-            <div class="flex">
-              <div class="newestBtn"><p>پرفروش ترین ها</p></div>
-              <div class="newestBtn"><p>محبوب ترین ها</p></div>
-              <div class="activeNewestBtn newestBtn"><p>جدیدترین ها</p></div>
+            <div class="TutoCardDetailTuto">
+              <h3>دوره جامع طراحی وب</h3>
+              <p>
+                اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
+                برای شما بهترین انتخاب برای شروع است!
+              </p>
             </div>
-            <div class="relative md:flex items-center gap-3 hidden text-gray-2">
-              <p class="relative z-10">مشاهده همه دوره ها</p>
-              <img src="./public/icons/arrow-left.svg" alt="" />
-              <div
-                class="-right-5 -z-1 absolute bg-purple-300 rounded-full w-[56px] h-[56px]"
-              ></div>
+            <div class="TutoCardTeacherDetail">
+              <img src="./public/image/userProf.png" alt="" />
+              <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="TutoCardTeacheDetail">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8 درس</span>
+              </div>
+              <div>
+                <img src="./public/icons/clockico.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
+              </div>
+            </div>
+            <div class="CardFooter">
+              <div>
+                <span>2,000,000</span>
+                <img src="./public/icons/toman-icon.svg" alt="" />
+              </div>
+              <div>
+                <span>جزییات دوره</span>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+              </div>
             </div>
           </div>
         </div>
-        <!-- cards container -->
-        <div
-          class="flex flex-wrap justify-center items-center gap-8 bg-lightBgPurple mt-12 w-full"
-        >
-          <!-- card -->
-          <div class="tutorialCard">
-            <div class="TutoCardImgContainer">
-              <img src="./public/image/uiux.png" alt="" />
+        <div class="tutorialCard">
+          <div class="TutoCardImgContainer">
+            <img src="./public/image/uiux.png" alt="" />
+          </div>
+          <div>
+            <div class="TutoCardRateContainer">
+              <img src="./public/image/stars.png" alt="" />
+              <span>(4.8 امتیاز)</span>
             </div>
-            <div>
-              <div class="TutoCardRateContainer">
-                <img src="./public/image/stars.png" alt="" />
-                <span>(4.8 امتیاز)</span>
+            <div class="TutoCardDetailTuto">
+              <h3>دوره جامع طراحی وب</h3>
+              <p>
+                اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
+                برای شما بهترین انتخاب برای شروع است!
+              </p>
+            </div>
+            <div class="TutoCardTeacherDetail">
+              <img src="./public/image/userProf.png" alt="" />
+              <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="TutoCardTeacheDetail">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8 درس</span>
               </div>
-              <div class="TutoCardDetailTuto">
-                <h3>دوره جامع طراحی وب</h3>
-                <p>
-                  اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
-                  برای شما بهترین انتخاب برای شروع است!
-                </p>
+              <div>
+                <img src="./public/icons/clockico.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
               </div>
-              <div class="TutoCardTeacherDetail">
-                <img src="./public/image/userProf.png" alt="" />
-                <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="CardFooter">
+              <div>
+                <span>2,000,000</span>
+                <img src="./public/icons/toman-icon.svg" alt="" />
               </div>
-              <div class="TutoCardTeacheDetail">
-                <div>
-                  <img src="./public/icons/book.svg" alt="" />
-                  <span> 8 درس</span>
-                </div>
-                <div>
-                  <img src="./public/icons/clockico.svg" alt="" />
-                  <span> 23:07 ساعت تدریس</span>
-                </div>
-              </div>
-              <div class="CardFooter">
-                <div>
-                  <span>2,000,000</span>
-                  <img src="./public/icons/toman-icon.svg" alt="" />
-                </div>
-                <div>
-                  <span>جزییات دوره</span>
-                  <img src="./public/icons/arrow-left.svg" alt="" />
-                </div>
+              <div>
+                <span>جزییات دوره</span>
+                <img src="./public/icons/arrow-left.svg" alt="" />
               </div>
             </div>
           </div>
-          <div class="tutorialCard">
-            <div class="TutoCardImgContainer">
-              <img src="./public/image/uiux.png" alt="" />
-            </div>
-            <div>
-              <div class="TutoCardRateContainer">
-                <img src="./public/image/stars.png" alt="" />
-                <span>(4.8 امتیاز)</span>
-              </div>
-              <div class="TutoCardDetailTuto">
-                <h3>دوره جامع طراحی وب</h3>
-                <p>
-                  اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
-                  برای شما بهترین انتخاب برای شروع است!
-                </p>
-              </div>
-              <div class="TutoCardTeacherDetail">
-                <img src="./public/image/userProf.png" alt="" />
-                <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
-              </div>
-              <div class="TutoCardTeacheDetail">
-                <div>
-                  <img src="./public/icons/book.svg" alt="" />
-                  <span> 8 درس</span>
-                </div>
-                <div>
-                  <img src="./public/icons/clockico.svg" alt="" />
-                  <span> 23:07 ساعت تدریس</span>
-                </div>
-              </div>
-              <div class="CardFooter">
-                <div>
-                  <span>2,000,000</span>
-                  <img src="./public/icons/toman-icon.svg" alt="" />
-                </div>
-                <div>
-                  <span>جزییات دوره</span>
-                  <img src="./public/icons/arrow-left.svg" alt="" />
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="tutorialCard">
+          <div class="TutoCardImgContainer">
+            <img src="./public/image/uiux.png" alt="" />
           </div>
-          <div class="tutorialCard">
-            <div class="TutoCardImgContainer">
-              <img src="./public/image/uiux.png" alt="" />
+          <div>
+            <div class="TutoCardRateContainer">
+              <img src="./public/image/stars.png" alt="" />
+              <span>(4.8 امتیاز)</span>
             </div>
-            <div>
-              <div class="TutoCardRateContainer">
-                <img src="./public/image/stars.png" alt="" />
-                <span>(4.8 امتیاز)</span>
+            <div class="TutoCardDetailTuto">
+              <h3>دوره جامع طراحی وب</h3>
+              <p>
+                اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
+                برای شما بهترین انتخاب برای شروع است!
+              </p>
+            </div>
+            <div class="TutoCardTeacherDetail">
+              <img src="./public/image/userProf.png" alt="" />
+              <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="TutoCardTeacheDetail">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8 درس</span>
               </div>
-              <div class="TutoCardDetailTuto">
-                <h3>دوره جامع طراحی وب</h3>
-                <p>
-                  اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
-                  برای شما بهترین انتخاب برای شروع است!
-                </p>
+              <div>
+                <img src="./public/icons/clockico.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
               </div>
-              <div class="TutoCardTeacherDetail">
-                <img src="./public/image/userProf.png" alt="" />
-                <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="CardFooter">
+              <div>
+                <span>2,000,000</span>
+                <img src="./public/icons/toman-icon.svg" alt="" />
               </div>
-              <div class="TutoCardTeacheDetail">
-                <div>
-                  <img src="./public/icons/book.svg" alt="" />
-                  <span> 8 درس</span>
-                </div>
-                <div>
-                  <img src="./public/icons/clockico.svg" alt="" />
-                  <span> 23:07 ساعت تدریس</span>
-                </div>
-              </div>
-              <div class="CardFooter">
-                <div>
-                  <span>2,000,000</span>
-                  <img src="./public/icons/toman-icon.svg" alt="" />
-                </div>
-                <div>
-                  <span>جزییات دوره</span>
-                  <img src="./public/icons/arrow-left.svg" alt="" />
-                </div>
+              <div>
+                <span>جزییات دوره</span>
+                <img src="./public/icons/arrow-left.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- done -->
     <div
       class="flex lg:flex-row flex-col-reverse mx-auto px-8 py-16 w-full md:w-4/5 xl:w-3/5 max-w-[1920px]"
     >
@@ -1258,7 +1194,7 @@
         </div>
         <div class="md:block hidden w-1/2"></div>
       </div>
-      <div class="bg-purple-50 pt-40 w-full">
+      <div class="bg-purple-50 mx-auto pt-40 w-5/6">
         <div class="lg:flex justify-center">
           <div class="border-mainWhite px-8 py-5 border-b-2 lg:w-1/3">
             <img src="./public/adorLogo.svg" alt="" class="md:px-24 lg:px-0" />
@@ -1270,9 +1206,9 @@
               در ستون و سطرآنچنان که لازم است و
             </p>
           </div>
-          <div class="md:flex justify-center items-center mx-auto w-full">
+          <div class="md:flex justify-evenly items-center mx-auto w-full">
             <div
-              class="border-mainWhite px-8 py-5 border-b-2 lg:h-4/5 text-gray-2"
+              class="border-mainWhite px-8 py-5 border-b-2 w-fit lg:h-4/5 text-gray-2"
             >
               <h3 class="py-2 text-gray-1 text-xl">با ما در ارتباط باشید</h3>
               <p class="flex lg:w-80 text-gray-2 leading-[27px]">
@@ -1293,7 +1229,7 @@
               </div>
             </div>
             <div
-              class="flex justify-between items-center border-mainWhite px-8 py-5 border-b-2 w-full lg:w-1/3 text-gray-1"
+              class="flex justify-between items-center border-mainWhite px-8 py-5 border-b-2 w-full lg:w-3/6 text-gray-1"
             >
               <div>
                 <h2 class="my-2 text-xl">شبکه های اجتمایی</h2>
