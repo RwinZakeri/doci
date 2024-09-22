@@ -153,17 +153,17 @@
     }
   }
   .singleCourseBtn {
-    @apply bg-purple-100 px-6 py-5 rounded-full text-gray-2;
+    @apply bg-purple-100 lg:px-12 px-6 py-4 rounded-full text-gray-2;
   }
   .singleCourseBtnActive {
     @apply text-mainWhite bg-purple-500;
   }
   .singleCourseSarfaslInfo {
-    @apply border-[1px] border-gray-5 bg-mainWhite p-4 rounded-xl w-full h-32 overflow-hidden;
-    .singleCourseSarfaslInfoNum {
-      @apply flex items-center gap-3 text-gray-1 text-xl;
-      div {
-        @apply bg-purple-600 px-4 py-2 rounded-full w-fit text-mainWhite;
+    @apply border-[1px] border-gray-5 bg-mainWhite p-4 rounded-xl w-full  flex items-center justify-between overflow-hidden;
+    .singleCourseSarfaslTitle {
+      @apply lg:flex lg:items-center lg:gap-4;
+      p {
+        @apply w-fit rounded-full px-4 py-2 text-mainWhite bg-purple-500;
       }
     }
     .singleCourseSarfaslCardInfo {
