@@ -216,6 +216,9 @@
   .myInput {
     @apply bg-mainWhite w-full h-12 rounded-xl px-2 text-gray-0 border-[1px] border-gray-4;
   }
+  .myTextArea {
+    @apply bg-mainWhite w-full h-12 rounded-xl px-2 text-gray-0 border-[1px] p-4 min-h-32 border-gray-4;
+  }
 }
 swiper-container {
   @apply w-3/5;
