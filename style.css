@@ -44,12 +44,12 @@
   body {
     @apply max-w-[1920px] mx-auto;
   }
-  /* input,
+  input,
   select {
-    border: none;
+    border: inherit;
     outline: none;
     font-family: "IRANSansWebFaNum", "IranianSans", sans-serif;
-  } */
+  }
 }
 /* component */
 @layer components {
@@ -158,54 +158,63 @@
   .singleCourseBtnActive {
     @apply text-mainWhite bg-purple-500;
   }
-  .singleCourseSarfaslInfo {
-    @apply border-[1px] border-gray-5 bg-mainWhite p-4 rounded-xl w-full  flex items-center justify-between overflow-hidden;
-    .singleCourseSarfaslTitle {
-      @apply lg:flex lg:items-center lg:gap-4;
-      p {
-        @apply w-fit rounded-full px-4 py-2 text-mainWhite bg-purple-500;
+  .sarfaslCard {
+    @apply flex flex-col justify-between items-start gap-3 border-[1px] border-gray-5 bg-mainWhite rounded-3xl  w-full h-[110px] lg:h-[64px] overflow-hidden pt-[6px] px-2;
+    .sarfaslMoreInfoBtn {
+      @apply flex justify-center items-center bg-purple-200 rounded-full w-6 lg:w-[48px] h-6 lg:h-[48px];
+    }
+    .sarfaslCardInfo {
+      @apply flex items-center h-full  gap-3;
+    }
+    .sarfaslCardInfoNum {
+      @apply flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px] text-white text-xl;
+    }
+    .sarfasCardTitle {
+      @apply text-gray-2 text-xl;
+    }
+    .sarfaslCardInfoAbouTutu {
+      @apply flex justify-between gap-10 w-full lg:w-fit;
+    }
+    .sarfasCardTime {
+      @apply flex items-center gap-1 text-gray-2;
+      img {
+        @apply h-6;
       }
     }
-    .singleCourseSarfaslCardInfo {
-      @apply flex justify-between items-center gap-4 mt-3;
-      div {
-        @apply flex items-center gap-2;
-        &:nth-of-type(1) {
-          @apply h-4 font-extralight text-purple-400;
-        }
-        &:nth-of-type(2) {
-          @apply h-4 font-extralight text-gray-3;
-        }
+    .sarfaslCardDownLoad {
+      @apply flex items-center gap-1 text-purple-mainViolet;
+      img {
+        @apply h-8;
       }
-      .singleCourseSarfaslCardMoreInfoBtn {
-        @apply bg-purple-100 rounded-full w-10 h-10 p-1;
+    }
+    .sarfasTitles {
+      @apply mt-5 flex px-4 mx-2 lg:mx-4 relative;
+      p {
+        @apply before:content-[''] before:block before:w-2 before:h-2 before:bg-purple-mainViolet before:rounded-full before:absolute before:right-0 before:top-1/3;
       }
     }
   }
-  .singleCourseSarfaslInfoActive {
-    @apply bg-purple-100 h-auto overflow-auto;
-
-    .singleCourseSarfaslCardInfo {
-      @apply flex justify-between items-center gap-4 mt-3;
-      div {
-        @apply flex items-center gap-2;
-        &:nth-of-type(1) {
-          @apply h-4 font-extralight text-purple-400;
-        }
-        &:nth-of-type(2) {
-          @apply h-4 font-extralight text-gray-3;
-        }
-        &:nth-of-type(3) {
-          @apply bg-purple-500 rotate-180;
-        }
-      }
-      .singleCourseSarfaslCardMoreInfoBtn {
-        @apply bg-purple-100 rounded-full w-10 h-10 p-1;
-      }
+  /* active sarfasl card */
+  .sarfaslCardActive {
+    @apply h-auto bg-purple-200 overflow-visible py-2;
+    .sarfaslMoreInfoBtn {
+      @apply rotate-180 bg-purple-mainViolet;
+    }
+    .sarfaslCardInfo {
+      @apply flex;
+    }
+    .sarfaslCardInfoNum {
+      @apply flex;
+    }
+    .sarfasCardTitle {
+      @apply text-gray-2;
+    }
+    .sarfaslCardInfoAbouTutu {
+      @apply flex;
     }
   }
   .myInput {
-    @apply w-full h-12  text-gray-3 border-[1px] border-gray-4 rounded-xl p-2 focus:border-gray-2 outline-none text-lg;
+    @apply bg-mainWhite w-full h-12 rounded-xl px-2 text-gray-0 border-[1px] border-gray-4;
   }
 }
 swiper-container {

@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         purple: {
+          mainViolet: "#7B79DC",
           950: "#2C0B6A",
           900: "#48169C",
           800: "#5718BF",
@@ -38,11 +39,15 @@ export default {
         mainWhite: "#ffffff",
         lightBgPurple: "#F5F5FF",
         mainWhiteSmoke: "#f5f5f5",
+        yellowCol: "#FFB547",
+        redred: "#D3304D",
+        lightRed: "#FBEAED",
       },
       backgroundImage: {
         "gradient-homePage": "linear-gradient(to bottom, #C8C3FF, #F5F5FF)",
         "gradient-homePage-button":
-          "linear-gradient(to right, #A285FF, #7E49FF)",
+          "linear-gradient(to right, #A285FF, #7E49FF )",
+        "gradient-mainToDark": "linear-gradient(to bottom, #7B79DC, #0A022F)",
       },
       screens: {
         iphoneSe: "400px",
