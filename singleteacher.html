@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>single teacher</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 lg:-translate-x-1/2"
+    >
+      <div class="lg:px-6 p-4 w-full h-full">
+        <!-- top part -->
+        <div class="flex justify-between items-center w-full">
+          <!-- right -->
+          <div class="flex justify-between items-center gap-2">
+            <button id="sidebarBtn" class="lg:hidden">
+              <img src="./public/icons/burgurmenu.svg" alt="" />
+            </button>
+            <a href="#">
+              <img src="./public/adorLogo.svg" alt="ador" />
+            </a>
+            <!-- -right-full -->
+          </div>
+          <!-- desktop search part -->
+          <div
+            class="lg:flex justify-between items-center hidden rounded-3xl w-1/2 h-[40px] lightGrayBorder"
+          >
+            <div
+              class="flex items-center gap-2 px-3 p-2 border-l-2 w-4/6 h-full"
+            >
+              <button class="burgurBtn">
+                <img src="./public/icons/search-ico-normal.svg" alt="" />
+              </button>
+              <input
+                type="text"
+                class="bg-transparent w-full h-full"
+                placeholder="جستجو"
+              />
+            </div>
+            <div
+              class="flex justify-center items-center px-0 iphoneSe:px-3 w-2/6"
+            >
+              <select
+                name=""
+                id=""
+                class="text-[8px] text-gray-3 text-wrap iphoneSe:text-xs"
+              >
+                <option value="">تمام دسته بندی ها</option>
+              </select>
+            </div>
+          </div>
+          <!-- left -->
+          <div>
+            <a
+              href="tel:09021702103"
+              class="flex gap-1 bg-purple-100 px-3 py-2 rounded-xl text-gray-3 iranNum"
+            >
+              <img src="./public/icons/headphoneicon.svg" alt="support" />
+              <p class="md:block hidden">پشتیبانی :</p>
+              <span>09021702103</span>
+            </a>
+          </div>
+        </div>
+        <!-- seprator -->
+        <div class="sepratorLine"></div>
+        <!-- bottom part -->
+        <div class="flex justify-center lg:justify-between items-center w-full">
+          <div
+            class="md:flex gap-2 hidden sm:w-4/12 lg:w-fit cursor-pointer"
+            id="arrowIcon"
+          >
+            <img src="./public/icons/foursquare.svg" alt="دوره های آموزشی" />
+            <p>دوره های آموزشی</p>
+            <img
+              src="./public/icons/arrow-down.svg"
+              class="max-w-6 rotate-0"
+              alt=""
+            />
+          </div>
+          <!-- desktop nav -->
+          <nav class="lg:block hidden">
+            <ul class="flex gap-2">
+              <li class="meniItemLi meniItemLiActive">
+                <a href="#">خانه</a>
+              </li>
+              <li class="meniItemLi">
+                <a href="#">نظرات دانشجویان</a>
+              </li>
+              <li class="meniItemLi">
+                <a href="#">درباره ما</a>
+              </li>
+              <li class="meniItemLi">
+                <a href="#">تماس با ما</a>
+              </li>
+              <li class="meniItemLi">
+                <a href="#">بلاگ</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- desktop tutorials -->
+          <p class="lg:block hidden text-gray-2">
+            <a href="#" class="flex gap-2">
+              <img src="./public/icons/usericon.svg" alt="tutorial" />
+              <span>دوره های خریداری شده</span>
+              <img src="./public/icons/arrow-left.svg" alt="" />
+            </a>
+          </p>
+          <div
+            class="flex justify-between items-center lg:hidden rounded-3xl w-full md:w-8/12 h-[40px] lightGrayBorder"
+          >
+            <div
+              class="flex items-center gap-2 px-3 p-2 border-l-2 w-4/6 h-full"
+            >
+              <button class="burgurBtn">
+                <img src="./public/icons/search-ico-normal.svg" alt="search" />
+              </button>
+              <input
+                type="text"
+                class="bg-transparent w-full h-full"
+                placeholder="جستجو"
+              />
+            </div>
+
+            <div
+              class="flex justify-center items-center px-0 iphoneSe:px-3 w-2/6"
+            >
+              <select
+                name=""
+                id=""
+                class="text-[8px] text-gray-3 text-wrap iphoneSe:text-xs"
+              >
+                <option value="">تمام دسته بندی ها</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- desktop tutorial sidebar  -->
+        <div
+          class="top-[110%] left-0 absolute hidden bg-mainWhite p-10 rounded-[32px] w-full h-[536px] scrollAnimate"
+          id="tutorialSidebar"
+        >
+          <div
+            class="flex justify-between items-center border-purple-300 pb-4 border-b-2 border-dashed w-full h-4/5"
+          >
+            <div class="flex flex-col gap-14">
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/movieIco.svg" alt="front" />
+                <p>آموزش طراحی سایت فرانت اند</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/moneyIco.svg" alt="backend" />
+                <p>آموزش طراحی سایت بک اند</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/brainIco.svg" alt="brain icon" />
+
+                <p>آموزش هوش مصنوعی</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/terminalIco.svg" alt="wordpress" />
+
+                <p>آموزش وردپرس</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/searchIco-menu.svg" alt="seo" />
+                <p>آموزش سیو</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-14">
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/movieIco.svg" alt="front" />
+                <p>آموزش طراحی سایت فرانت اند</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/moneyIco.svg" alt="backend" />
+                <p>آموزش طراحی سایت بک اند</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/brainIco.svg" alt="brain icon" />
+
+                <p>آموزش هوش مصنوعی</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/terminalIco.svg" alt="wordpress" />
+
+                <p>آموزش وردپرس</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/searchIco-menu.svg" alt="seo" />
+                <p>آموزش سیو</p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-14">
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/movieIco.svg" alt="front" />
+                <p>آموزش طراحی سایت فرانت اند</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/moneyIco.svg" alt="backend" />
+                <p>آموزش طراحی سایت بک اند</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/brainIco.svg" alt="brain icon" />
+
+                <p>آموزش هوش مصنوعی</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/terminalIco.svg" alt="wordpress" />
+
+                <p>آموزش وردپرس</p>
+              </div>
+              <div class="flex items-center gap-4">
+                <img src="./public/icons/searchIco-menu.svg" alt="seo" />
+                <p>آموزش سیو</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-start items-center pr-5 w-full h-1/5">
+            <p>
+              <a href="#" class="relative flex gap-2"
+                ><span class="relative z-10">مشاهده همه دوره ها</span>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+                <div
+                  class="right-[3.5%] -z-4 absolute bg-purple-300 rounded-full w-14 h-14"
+                ></div>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="top-0 -right-full z-10 absolute bg-gray-7 w-9/12 h-screen transition-all duration-300 sidebar"
+      >
+        <!--  -->
+        <div
+          class="flex items-center gap-2 bg-mainWhite shadow-md p-3.5 w-full font-semibold text-sm"
+          id="sidebarClose"
+        >
+          <img src="./public/icons/arrow-right.svg" alt="" />
+          <p>بازگشت به آکادو</p>
+        </div>
+        <div class="px-3.5 pt-3 w-full h-[calc(100vh_-_44px)]">
+          <div class="flex items-center gap-1 py-2 text-sm">
+            <img src="./public/icons/usericon.svg" alt="tutorials" />
+            <p>دوره های خریداری شده</p>
+          </div>
+          <div class="flex items-center gap-1 py-2 text-sm" id="tutorialsBtn">
+            <img src="./public/icons/foursquare.svg" alt="" />
+
+            <button class="text-gray-2">دوره های آموزشی</button>
+            <img src="./public/icons/arrow-left.svg" alt="" />
+          </div>
+          <div class="sepratorLine"></div>
+          <div class="text-sm">
+            <div class="flex items-center gap-2 text-purple-600 text-sm">
+              <img src="./public/icons/purpleLine.svg" alt="" />
+              <h3>خانه</h3>
+            </div>
+            <div class="mt-3 w-full">
+              <nav>
+                <div class="py-2 w-full">
+                  <a href="#">نظرات دانشجویان</a>
+                </div>
+                <div class="py-2 w-full"><a href="#">درباره ما</a></div>
+                <div class="py-2 w-full"><a href="#">تماس با ما</a></div>
+                <div class="py-2 w-full"><a href="#">بلاگ</a></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- tutorials -->
+        <div
+          class="top-0 -right-full z-10 absolute bg-mainWhite w-full h-screen transition-all"
+          id="tutorialsSidebar"
+        >
+          <div
+            class="flex items-center gap-2 bg-mainWhite shadow-md p-3.5 w-full font-semibold text-sm transition-all"
+            id="tutorialsSidebarBtn"
+          >
+            <img src="./public/icons/arrow-right.svg" alt="" />
+            <!-- id="tutorialsCloseBtn" -->
+            <button>بازگشت به منوی اصلی</button>
+          </div>
+          <div class="px-3.5 pt-3 w-full h-full">
+            <div class="flex items-center gap-2 py-3 pb-8 text-sm">
+              <img src="./public/icons/foursquare.svg" alt="" />
+              <p>دوره های آموزشی</p>
+            </div>
+            <div class="flex flex-col gap-4 text-sm">
+              <div class="flex items-center gap-2">
+                <img src="./public/icons/movieIco.svg" alt="" />
+                <p>آموزش طراحی سایت فرانت اند</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./public/icons/moneyIco.svg" alt="" />
+                <p>آموزش طراحی سایت بک اند</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./public/icons/brainIco.svg" alt="" />
+
+                <p>آموزش هوش مصنوعی</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./public/icons/terminalIco.svg" alt="" />
+
+                <p>آموزش وردپرس</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <img src="./public/icons/searchIco-menu.svg" alt="" />
+
+                <p>آموزش سیو</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="top-0 left-0 z-0 absolute hidden backdrop-blur-[1px] blur-lg w-screen h-screen"
+        id="blurDiv"
+      ></div>
+    </header>
+    <div class="bg-gradient-homePage w-full">
+      <!-- course navigation -->
+      <div class="mx-auto p-6 lg:pt-64 pb-0 lg:w-4/5">
+        <div class="flex gap-1 mb-20">
+          <p class="text-gray-2">خانه</p>
+          <img src="./public/icons/leftGreatherThan.svg" alt="" />
+          <p class="text-gray-1">طراحی رابط کاربری</p>
+        </div>
+      </div>
+      <div
+        class="flex flex-row justify-center items-start bg-red mx-auto w-full lg:w-4/5"
+      >
+        <div class="lg:block hidden p-4 w-2/5">
+          <!-- teacher card container -->
+          <div class="w-full">
+            <div
+              class="flex flex-col justify-center items-center gap-4 bg-mainWhite shadow-mainShadow mr-auto py-16 rounded-2xl w-3/4"
+            >
+              <div
+                class="border-2 border-purple-100 mb-6 p-2 rounded-full w-48 h-48"
+              >
+                <img
+                  src="./public/image/ostadpic.png"
+                  alt=""
+                  class="rounded-full w-full h-full"
+                />
+              </div>
+              <h3 class="text-2xl text-gray-1">حمیدرضا قبادی</h3>
+              <p class="text-lg text-purple-400">برنامه نویس و مدرس وردپرس</p>
+              <div class="flex items-center gap-3 pt-5">
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-Instagram.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-call.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-in.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-Website.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-sms.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-12 p-4 w-full lg:w-3/5">
+          <!-- teacher card container -->
+          <div class="block lg:hidden shadow-mainShadow w-full">
+            <div
+              class="flex flex-col justify-center items-center gap-4 bg-mainWhite py-16 rounded-2xl w-full"
+            >
+              <div
+                class="border-2 border-purple-100 mb-6 p-2 rounded-full w-48 h-48"
+              >
+                <img
+                  src="./public/image/ostadpic.png"
+                  alt=""
+                  class="rounded-full w-full h-full"
+                />
+              </div>
+              <h3 class="text-2xl text-gray-1">حمیدرضا قبادی</h3>
+              <p class="text-lg text-purple-400">برنامه نویس و مدرس وردپرس</p>
+              <div class="flex items-center gap-3 pt-5">
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-Instagram.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-call.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-in.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-Website.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+                <div
+                  class="flex justify-center items-center bg-purple-mainViolet rounded-full w-[40px] h-[40px]"
+                >
+                  <img
+                    src="./public/icons/white-sms.svg"
+                    alt=""
+                    class="w-[20px] h-[20px]"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- choose filter -->
+          <div
+            class="flex flex-wrap items-center gap-2 bg-mainWhite p-4 rounded-2xl w-full"
+          >
+            <div
+              class="bg-purple-100 px-12 py-4 rounded-full w-fit text-gray-2"
+            >
+              <p>سوابق تحصیلی</p>
+            </div>
+            <div
+              class="bg-purple-100 px-12 py-4 rounded-full w-fit text-gray-2"
+            >
+              <p>درباره من</p>
+            </div>
+            <div
+              class="bg-purple-100 px-12 py-4 rounded-full w-fit text-gray-2"
+            >
+              <p>سوابق شغلی</p>
+            </div>
+            <div
+              class="bg-purple-100 px-12 py-4 rounded-full w-fit text-gray-2"
+            >
+              <p>گواهینامه ها</p>
+            </div>
+            <div
+              class="bg-purple-100 px-12 py-4 rounded-full w-fit text-gray-2 singleTeacherChooseCateBtnActive"
+            >
+              <p>دوره ها</p>
+            </div>
+          </div>
+          <!-- about teacher -->
+          <div class="bg-mainWhite shadow-mainShadow p-4 rounded-2xl w-full">
+            <h3 class="border-purple-300 p-4 border-b-2 border-dashed text-xl">
+              درباره من
+            </h3>
+            <p class="p-4 text-gray-2 text-justify leading-[28px]">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی لورم ایپسوم متن
+              ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+              که لازم است و برای شرایط فعلی لورم ایپسوم متن ساختگی با تولید
+              سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+              چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+              و برای شرایط فعلی لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+              صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+              روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی لورم ایپسوم متن
+              ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+              گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+              که لازم است و برای شرایط فعلی
+            </p>
+          </div>
+          <!-- Educational records -->
+          <div class="bg-mainWhite shadow-mainShadow p-4 rounded-2xl w-full">
+            <h3 class="border-purple-300 p-4 border-b-2 border-dashed text-xl">
+              سوابق تحصیلی
+            </h3>
+            <!-- records -->
+            <div class="pt-4">
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 border-purple-mainViolet before:bg-purple-mainViolet p-4 pt-0 border-r-2 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 border-purple-mainViolet before:bg-purple-mainViolet p-4 pt-0 border-r-2 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 border-purple-mainViolet before:bg-purple-mainViolet p-4 pt-0 border-r-2 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+            </div>
+          </div>
+          <!-- job records -->
+          <div class="bg-mainWhite shadow-mainShadow p-4 rounded-2xl w-full">
+            <h3 class="border-purple-300 p-4 border-b-2 border-dashed text-xl">
+              سوابق شغلی
+            </h3>
+            <!-- records -->
+            <div class="pt-4">
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 border-purple-mainViolet before:bg-purple-mainViolet p-4 pt-0 border-r-2 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 border-purple-mainViolet before:bg-purple-mainViolet p-4 pt-0 border-r-2 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">سوابق شغلی</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 border-purple-mainViolet before:bg-purple-mainViolet p-4 pt-0 border-r-2 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+            </div>
+          </div>
+          <!-- licenses -->
+          <div class="bg-mainWhite shadow-mainShadow p-4 rounded-2xl w-full">
+            <h3 class="border-purple-300 p-4 border-b-2 border-dashed text-xl">
+              سوابق شغلی
+            </h3>
+            <!-- records -->
+            <div class="pt-4">
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 before:bg-purple-mainViolet p-4 pt-0 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 before:bg-purple-mainViolet p-4 pt-0 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+              <div
+                class="relative before:right-[-6px] before:absolute flex flex-col before:content-[''] gap-3 before:bg-purple-mainViolet p-4 pt-0 before:rounded-full before:w-3 before:h-3"
+              >
+                <h3 class="text-gray-1 text-xl">ارشد مهندسی فناوری اطلاعات</h3>
+                <p class="text-gray-3">دانشگاه آزاد</p>
+                <p class="text-gray-3">1394-1400</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-mainWhite mt-12 p-4 w-full">
+      <div class="mx-auto w-full lg:w-7/12">
+        <div class="bg-purple-100 mx-auto lg:mx-0 px-4 py-2 rounded-full w-fit">
+          <p>دوره ها</p>
+        </div>
+        <h3
+          class="lg:text-right py-6 text-center text-gray-1 text-xl lg:text-2xl"
+        >
+          دوره های استاد حمیدرضا قبادی
+        </h3>
+      </div>
+      <!-- card -->
+      <!-- cards container -->
+      <div
+        class="flex flex-wrap justify-center items-center gap-8 bg-mainWhite mt-12 w-full"
+      >
+        <!-- card -->
+        <div class="tutorialCard">
+          <div class="TutoCardImgContainer">
+            <img src="./public/image/uiux.png" alt="" />
+          </div>
+          <div>
+            <div class="TutoCardRateContainer">
+              <img src="./public/image/stars.png" alt="" />
+              <span>(4.8 امتیاز)</span>
+            </div>
+            <div class="TutoCardDetailTuto">
+              <h3>دوره جامع طراحی وب</h3>
+              <p>
+                اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
+                برای شما بهترین انتخاب برای شروع است!
+              </p>
+            </div>
+            <div class="TutoCardTeacherDetail">
+              <img src="./public/image/userProf.png" alt="" />
+              <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="TutoCardTeacheDetail">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8 درس</span>
+              </div>
+              <div>
+                <img src="./public/icons/clockico.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
+              </div>
+            </div>
+            <div class="CardFooter">
+              <div>
+                <span>2,000,000</span>
+                <img src="./public/icons/toman-icon.svg" alt="" />
+              </div>
+              <div>
+                <span>جزییات دوره</span>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tutorialCard">
+          <div class="TutoCardImgContainer">
+            <img src="./public/image/uiux.png" alt="" />
+          </div>
+          <div>
+            <div class="TutoCardRateContainer">
+              <img src="./public/image/stars.png" alt="" />
+              <span>(4.8 امتیاز)</span>
+            </div>
+            <div class="TutoCardDetailTuto">
+              <h3>دوره جامع طراحی وب</h3>
+              <p>
+                اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
+                برای شما بهترین انتخاب برای شروع است!
+              </p>
+            </div>
+            <div class="TutoCardTeacherDetail">
+              <img src="./public/image/userProf.png" alt="" />
+              <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="TutoCardTeacheDetail">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8 درس</span>
+              </div>
+              <div>
+                <img src="./public/icons/clockico.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
+              </div>
+            </div>
+            <div class="CardFooter">
+              <div>
+                <span>2,000,000</span>
+                <img src="./public/icons/toman-icon.svg" alt="" />
+              </div>
+              <div>
+                <span>جزییات دوره</span>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tutorialCard">
+          <div class="TutoCardImgContainer">
+            <img src="./public/image/uiux.png" alt="" />
+          </div>
+          <div>
+            <div class="TutoCardRateContainer">
+              <img src="./public/image/stars.png" alt="" />
+              <span>(4.8 امتیاز)</span>
+            </div>
+            <div class="TutoCardDetailTuto">
+              <h3>دوره جامع طراحی وب</h3>
+              <p>
+                اگر در دنیای برنامه‌نویسی تازه‌وارد هستید، دوره جامع طراحی وب
+                برای شما بهترین انتخاب برای شروع است!
+              </p>
+            </div>
+            <div class="TutoCardTeacherDetail">
+              <img src="./public/image/userProf.png" alt="" />
+              <p><span class="text-gray-3">مدرس دوره: </span>حمیدرضا قبادی</p>
+            </div>
+            <div class="TutoCardTeacheDetail">
+              <div>
+                <img src="./public/icons/book.svg" alt="" />
+                <span> 8 درس</span>
+              </div>
+              <div>
+                <img src="./public/icons/clockico.svg" alt="" />
+                <span> 23:07 ساعت تدریس</span>
+              </div>
+            </div>
+            <div class="CardFooter">
+              <div>
+                <span>2,000,000</span>
+                <img src="./public/icons/toman-icon.svg" alt="" />
+              </div>
+              <div>
+                <span>جزییات دوره</span>
+                <img src="./public/icons/arrow-left.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

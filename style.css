@@ -153,7 +153,7 @@
     }
   }
   .singleCourseBtn {
-    @apply bg-purple-100 lg:px-12 px-6 py-4 rounded-full text-gray-2;
+    @apply bg-purple-100 px-[6.2%] py-4 rounded-full text-gray-2;
   }
   .singleCourseBtnActive {
     @apply text-mainWhite bg-purple-500;
@@ -234,4 +234,8 @@ swiper-container {
 .scrollAnimate {
   animation-name: scrollDown;
   animation-duration: 500ms;
+}
+
+.singleTeacherChooseCateBtnActive {
+  @apply text-mainWhite bg-purple-mainViolet;
 }
