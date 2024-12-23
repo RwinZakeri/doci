@@ -5,49 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
     <title>Reviews</title>
   </head>
   <body>
     <!-- header -->
     <header
-      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 lg:-translate-x-1/2"
+      class="relative z-50 mx-auto w-full bg-mainWhite lg:fixed lg:left-1/2 lg:top-12 lg:w-4/5 lg:-translate-x-1/2 lg:rounded-[32px]"
     >
-      <div class="lg:px-6 p-4 w-full h-full">
+      <div class="h-full w-full p-4 lg:px-6">
         <!-- top part -->
-        <div class="flex justify-between items-center w-full">
+        <div class="flex w-full items-center justify-between">
           <!-- right -->
-          <div class="flex justify-between items-center gap-2">
+          <div class="flex items-center justify-between gap-2">
             <button id="sidebarBtn" class="lg:hidden">
-              <img src="./public/icons/burgurmenu.svg" alt="" />
+              <img src="./icons/burgurmenu.svg" alt="" />
             </button>
             <a href="#">
-              <img src="./public/adorLogo.svg" alt="ador" />
+              <img src="./adorLogo.svg" alt="ador" />
             </a>
             <!-- -right-full -->
           </div>
           <!-- desktop search part -->
           <div
-            class="lg:flex justify-between items-center hidden rounded-3xl w-1/2 h-[40px] lightGrayBorder"
+            class="lightGrayBorder hidden h-[40px] w-1/2 items-center justify-between rounded-3xl lg:flex"
           >
             <div
-              class="flex items-center gap-2 px-3 p-2 border-l-2 w-4/6 h-full"
+              class="flex h-full w-4/6 items-center gap-2 border-l-2 p-2 px-3"
             >
               <button class="burgurBtn">
-                <img src="./public/icons/search-ico-normal.svg" alt="" />
+                <img src="./icons/search-ico-normal.svg" alt="" />
               </button>
               <input
                 type="text"
-                class="bg-transparent w-full h-full"
+                class="h-full w-full bg-transparent"
                 placeholder="جستجو"
               />
             </div>
             <div
-              class="flex justify-center items-center px-0 iphoneSe:px-3 w-2/6"
+              class="flex w-2/6 items-center justify-center px-0 iphoneSe:px-3"
             >
               <select
                 name=""
                 id=""
-                class="text-[8px] text-gray-3 text-wrap iphoneSe:text-xs"
+                class="text-wrap text-[8px] text-gray-3 iphoneSe:text-xs"
               >
                 <option value="">تمام دسته بندی ها</option>
               </select>
@@ -57,10 +58,10 @@
           <div>
             <a
               href="tel:09021702103"
-              class="flex gap-1 bg-purple-100 px-3 py-2 rounded-xl text-gray-3 iranNum"
+              class="iranNum flex gap-1 rounded-xl bg-purple-100 px-3 py-2 text-gray-3"
             >
-              <img src="./public/icons/headphoneicon.svg" alt="support" />
-              <p class="md:block hidden">پشتیبانی :</p>
+              <img src="./icons/headphoneicon.svg" alt="support" />
+              <p class="hidden md:block">پشتیبانی :</p>
               <span>09021702103</span>
             </a>
           </div>
@@ -68,70 +69,75 @@
         <!-- seprator -->
         <div class="sepratorLine"></div>
         <!-- bottom part -->
-        <div class="flex justify-center lg:justify-between items-center w-full">
+        <div class="flex w-full items-center justify-center lg:justify-between">
           <div
-            class="md:flex gap-2 hidden sm:w-4/12 lg:w-fit cursor-pointer"
+            class="hidden cursor-pointer gap-2 sm:w-4/12 md:flex lg:w-fit"
             id="arrowIcon"
           >
-            <img src="./public/icons/foursquare.svg" alt="دوره های آموزشی" />
+            <img src="./icons/foursquare.svg" alt="دوره های آموزشی" />
             <p>دوره های آموزشی</p>
-            <img
-              src="./public/icons/arrow-down.svg"
-              class="max-w-6 rotate-0"
-              alt=""
-            />
+            <img src="./icons/arrow-down.svg" class="max-w-6 rotate-0" alt="" />
           </div>
           <!-- desktop nav -->
-          <nav class="lg:block hidden">
+          <nav class="hidden lg:block">
             <ul class="flex gap-2">
               <li class="meniItemLi meniItemLiActive">
-                <a href="#">خانه</a>
+                <a href="./index.html">خانه</a>
               </li>
               <li class="meniItemLi">
-                <a href="#">نظرات دانشجویان</a>
+                <a href="./reviews.html">نظرات دانشجویان</a>
               </li>
               <li class="meniItemLi">
-                <a href="#">درباره ما</a>
+                <a href="./aboutus.html">درباره ما</a>
               </li>
               <li class="meniItemLi">
-                <a href="#">تماس با ما</a>
+                <a href="./contactus.html">تماس با ما</a>
               </li>
               <li class="meniItemLi">
-                <a href="#">بلاگ</a>
+                <a href="./courses.html">بلاگ</a>
+              </li>
+              <li class="meniItemLi">
+                <a href="./singleteacher.html">درباره استاد</a>
+              </li>
+              <li class="meniItemLi">
+                <a href="./singlecourse.html">درباره دوره</a>
+              </li>
+              <li class="meniItemLi">
+                <a href="./teachers.html">اساتید</a>
               </li>
             </ul>
           </nav>
           <!-- desktop tutorials -->
-          <p class="lg:block hidden text-gray-2">
+          <p class="hidden text-gray-2 lg:block">
             <a href="#" class="flex gap-2">
-              <img src="./public/icons/usericon.svg" alt="tutorial" />
+              <img src="./icons/usericon.svg" alt="tutorial" />
               <span>دوره های خریداری شده</span>
-              <img src="./public/icons/arrow-left.svg" alt="" />
+              <img src="./icons/arrow-left.svg" alt="" />
             </a>
           </p>
           <div
-            class="flex justify-between items-center lg:hidden rounded-3xl w-full md:w-8/12 h-[40px] lightGrayBorder"
+            class="lightGrayBorder flex h-[40px] w-full items-center justify-between rounded-3xl md:w-8/12 lg:hidden"
           >
             <div
-              class="flex items-center gap-2 px-3 p-2 border-l-2 w-4/6 h-full"
+              class="flex h-full w-4/6 items-center gap-2 border-l-2 p-2 px-3"
             >
               <button class="burgurBtn">
-                <img src="./public/icons/search-ico-normal.svg" alt="search" />
+                <img src="./icons/search-ico-normal.svg" alt="search" />
               </button>
               <input
                 type="text"
-                class="bg-transparent w-full h-full"
+                class="h-full w-full bg-transparent"
                 placeholder="جستجو"
               />
             </div>
 
             <div
-              class="flex justify-center items-center px-0 iphoneSe:px-3 w-2/6"
+              class="flex w-2/6 items-center justify-center px-0 iphoneSe:px-3"
             >
               <select
                 name=""
                 id=""
-                class="text-[8px] text-gray-3 text-wrap iphoneSe:text-xs"
+                class="text-wrap text-[8px] text-gray-3 iphoneSe:text-xs"
               >
                 <option value="">تمام دسته بندی ها</option>
               </select>
@@ -140,93 +146,93 @@
         </div>
         <!-- desktop tutorial sidebar  -->
         <div
-          class="top-[110%] left-0 absolute hidden bg-mainWhite p-10 rounded-[32px] w-full h-[536px] scrollAnimate"
+          class="scrollAnimate absolute left-0 top-[110%] hidden h-[536px] w-full rounded-[32px] bg-mainWhite p-10"
           id="tutorialSidebar"
         >
           <div
-            class="flex justify-between items-center border-purple-300 pb-4 border-b-2 border-dashed w-full h-4/5"
+            class="flex h-4/5 w-full items-center justify-between border-b-2 border-dashed border-purple-300 pb-4"
           >
             <div class="flex flex-col gap-14">
               <div class="flex items-center gap-4">
-                <img src="./public/icons/movieIco.svg" alt="front" />
+                <img src="./icons/movieIco.svg" alt="front" />
                 <p>آموزش طراحی سایت فرانت اند</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/moneyIco.svg" alt="backend" />
+                <img src="./icons/moneyIco.svg" alt="backend" />
                 <p>آموزش طراحی سایت بک اند</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/brainIco.svg" alt="brain icon" />
+                <img src="./icons/brainIco.svg" alt="brain icon" />
 
                 <p>آموزش هوش مصنوعی</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/terminalIco.svg" alt="wordpress" />
+                <img src="./icons/terminalIco.svg" alt="wordpress" />
 
                 <p>آموزش وردپرس</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/searchIco-menu.svg" alt="seo" />
+                <img src="./icons/searchIco-menu.svg" alt="seo" />
                 <p>آموزش سیو</p>
               </div>
             </div>
             <div class="flex flex-col gap-14">
               <div class="flex items-center gap-4">
-                <img src="./public/icons/movieIco.svg" alt="front" />
+                <img src="./icons/movieIco.svg" alt="front" />
                 <p>آموزش طراحی سایت فرانت اند</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/moneyIco.svg" alt="backend" />
+                <img src="./icons/moneyIco.svg" alt="backend" />
                 <p>آموزش طراحی سایت بک اند</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/brainIco.svg" alt="brain icon" />
+                <img src="./icons/brainIco.svg" alt="brain icon" />
 
                 <p>آموزش هوش مصنوعی</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/terminalIco.svg" alt="wordpress" />
+                <img src="./icons/terminalIco.svg" alt="wordpress" />
 
                 <p>آموزش وردپرس</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/searchIco-menu.svg" alt="seo" />
+                <img src="./icons/searchIco-menu.svg" alt="seo" />
                 <p>آموزش سیو</p>
               </div>
             </div>
             <div class="flex flex-col gap-14">
               <div class="flex items-center gap-4">
-                <img src="./public/icons/movieIco.svg" alt="front" />
+                <img src="./icons/movieIco.svg" alt="front" />
                 <p>آموزش طراحی سایت فرانت اند</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/moneyIco.svg" alt="backend" />
+                <img src="./icons/moneyIco.svg" alt="backend" />
                 <p>آموزش طراحی سایت بک اند</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/brainIco.svg" alt="brain icon" />
+                <img src="./icons/brainIco.svg" alt="brain icon" />
 
                 <p>آموزش هوش مصنوعی</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/terminalIco.svg" alt="wordpress" />
+                <img src="./icons/terminalIco.svg" alt="wordpress" />
 
                 <p>آموزش وردپرس</p>
               </div>
               <div class="flex items-center gap-4">
-                <img src="./public/icons/searchIco-menu.svg" alt="seo" />
+                <img src="./icons/searchIco-menu.svg" alt="seo" />
                 <p>آموزش سیو</p>
               </div>
             </div>
           </div>
 
-          <div class="flex justify-start items-center pr-5 w-full h-1/5">
+          <div class="flex h-1/5 w-full items-center justify-start pr-5">
             <p>
               <a href="#" class="relative flex gap-2"
                 ><span class="relative z-10">مشاهده همه دوره ها</span>
-                <img src="./public/icons/arrow-left.svg" alt="" />
+                <img src="./icons/arrow-left.svg" alt="" />
                 <div
-                  class="right-[3.5%] -z-4 absolute bg-purple-300 rounded-full w-14 h-14"
+                  class="-z-4 absolute right-[3.5%] h-14 w-14 rounded-full bg-purple-300"
                 ></div>
               </a>
             </p>
@@ -234,84 +240,84 @@
         </div>
       </div>
       <div
-        class="top-0 -right-full z-10 absolute bg-gray-7 w-9/12 h-screen transition-all duration-300 sidebar"
+        class="sidebar absolute -right-full top-0 z-10 h-screen w-9/12 bg-gray-7 transition-all duration-300"
       >
         <!--  -->
         <div
-          class="flex items-center gap-2 bg-mainWhite shadow-md p-3.5 w-full font-semibold text-sm"
+          class="flex w-full items-center gap-2 bg-mainWhite p-3.5 text-sm font-semibold shadow-md"
           id="sidebarClose"
         >
-          <img src="./public/icons/arrow-right.svg" alt="" />
+          <img src="./icons/arrow-right.svg" alt="" />
           <p>بازگشت به آکادو</p>
         </div>
-        <div class="px-3.5 pt-3 w-full h-[calc(100vh_-_44px)]">
+        <div class="h-[calc(100vh_-_44px)] w-full px-3.5 pt-3">
           <div class="flex items-center gap-1 py-2 text-sm">
-            <img src="./public/icons/usericon.svg" alt="tutorials" />
+            <img src="./icons/usericon.svg" alt="tutorials" />
             <p>دوره های خریداری شده</p>
           </div>
           <div class="flex items-center gap-1 py-2 text-sm" id="tutorialsBtn">
-            <img src="./public/icons/foursquare.svg" alt="" />
+            <img src="./icons/foursquare.svg" alt="" />
 
             <button class="text-gray-2">دوره های آموزشی</button>
-            <img src="./public/icons/arrow-left.svg" alt="" />
+            <img src="./icons/arrow-left.svg" alt="" />
           </div>
           <div class="sepratorLine"></div>
           <div class="text-sm">
-            <div class="flex items-center gap-2 text-purple-600 text-sm">
-              <img src="./public/icons/purpleLine.svg" alt="" />
+            <div class="flex items-center gap-2 text-sm text-purple-600">
+              <img src="./icons/purpleLine.svg" alt="" />
               <h3>خانه</h3>
             </div>
             <div class="mt-3 w-full">
               <nav>
-                <div class="py-2 w-full">
+                <div class="w-full py-2">
                   <a href="#">نظرات دانشجویان</a>
                 </div>
-                <div class="py-2 w-full"><a href="#">درباره ما</a></div>
-                <div class="py-2 w-full"><a href="#">تماس با ما</a></div>
-                <div class="py-2 w-full"><a href="#">بلاگ</a></div>
+                <div class="w-full py-2"><a href="#">درباره ما</a></div>
+                <div class="w-full py-2"><a href="#">تماس با ما</a></div>
+                <div class="w-full py-2"><a href="#">بلاگ</a></div>
               </nav>
             </div>
           </div>
         </div>
         <!-- tutorials -->
         <div
-          class="top-0 -right-full z-10 absolute bg-mainWhite w-full h-screen transition-all"
+          class="absolute -right-full top-0 z-10 h-screen w-full bg-mainWhite transition-all"
           id="tutorialsSidebar"
         >
           <div
-            class="flex items-center gap-2 bg-mainWhite shadow-md p-3.5 w-full font-semibold text-sm transition-all"
+            class="flex w-full items-center gap-2 bg-mainWhite p-3.5 text-sm font-semibold shadow-md transition-all"
             id="tutorialsSidebarBtn"
           >
-            <img src="./public/icons/arrow-right.svg" alt="" />
+            <img src="./icons/arrow-right.svg" alt="" />
             <!-- id="tutorialsCloseBtn" -->
             <button>بازگشت به منوی اصلی</button>
           </div>
-          <div class="px-3.5 pt-3 w-full h-full">
+          <div class="h-full w-full px-3.5 pt-3">
             <div class="flex items-center gap-2 py-3 pb-8 text-sm">
-              <img src="./public/icons/foursquare.svg" alt="" />
+              <img src="./icons/foursquare.svg" alt="" />
               <p>دوره های آموزشی</p>
             </div>
             <div class="flex flex-col gap-4 text-sm">
               <div class="flex items-center gap-2">
-                <img src="./public/icons/movieIco.svg" alt="" />
+                <img src="./icons/movieIco.svg" alt="" />
                 <p>آموزش طراحی سایت فرانت اند</p>
               </div>
               <div class="flex items-center gap-2">
-                <img src="./public/icons/moneyIco.svg" alt="" />
+                <img src="./icons/moneyIco.svg" alt="" />
                 <p>آموزش طراحی سایت بک اند</p>
               </div>
               <div class="flex items-center gap-2">
-                <img src="./public/icons/brainIco.svg" alt="" />
+                <img src="./icons/brainIco.svg" alt="" />
 
                 <p>آموزش هوش مصنوعی</p>
               </div>
               <div class="flex items-center gap-2">
-                <img src="./public/icons/terminalIco.svg" alt="" />
+                <img src="./icons/terminalIco.svg" alt="" />
 
                 <p>آموزش وردپرس</p>
               </div>
               <div class="flex items-center gap-2">
-                <img src="./public/icons/searchIco-menu.svg" alt="" />
+                <img src="./icons/searchIco-menu.svg" alt="" />
 
                 <p>آموزش سیو</p>
               </div>
@@ -320,23 +326,23 @@
         </div>
       </div>
       <div
-        class="top-0 left-0 z-0 absolute hidden backdrop-blur-[1px] blur-lg w-screen h-screen"
+        class="absolute left-0 top-0 z-0 hidden h-screen w-screen blur-lg backdrop-blur-[1px]"
         id="blurDiv"
       ></div>
     </header>
     <!-- main container -->
-    <div class="bg-gradient-homePage w-full">
+    <div class="w-full bg-gradient-homePage">
       <!-- course navigation -->
-      <div class="space-y-6 mx-auto p-6 lg:pt-64 w-full lg:w-4/5">
+      <div class="mx-auto w-full space-y-6 p-6 lg:w-4/5 lg:pt-64">
         <div class="flex gap-1">
           <p class="text-gray-2">خانه</p>
-          <img src="./public/icons/leftGreatherThan.svg" alt="" />
+          <img src="./icons/leftGreatherThan.svg" alt="" />
           <p class="text-gray-1">طراحی رابط کاربری</p>
         </div>
       </div>
       <!-- comments container -->
       <div class="w-full text-center">
-        <div class="bg-purple-100 mx-auto my-4 px-5 py-2 rounded-full w-fit">
+        <div class="mx-auto my-4 w-fit rounded-full bg-purple-100 px-5 py-2">
           <p>نظرات</p>
         </div>
         <h3 class="py-5 text-2xl text-gray-1 lg:text-4xl">
@@ -346,12 +352,12 @@
         <!-- 
         -->
         <div
-          class="relative before:top-0 after:top-0 after:left-0 before:z-[999] after:z-[999] before:absolute after:absolute flex flex-col before:content-[''] after:content-[''] gap-10 before:bg-gradient-to-r after:bg-gradient-to-r before:from-white/0 after:from-white/100 before:to-white/100 after:to-white/0 my-4 w-full before:w-1/12 after:w-1/12 before:h-full after:h-full"
+          class="relative my-4 flex w-full flex-col gap-10 before:absolute before:top-0 before:z-[999] before:h-full before:w-1/12 before:bg-gradient-to-r before:from-white/0 before:to-white/100 before:content-[''] after:absolute after:left-0 after:top-0 after:z-[999] after:h-full after:w-1/12 after:bg-gradient-to-r after:from-white/100 after:to-white/0 after:content-['']"
         >
           <!-- Your content here -->
 
           <swiper-container
-            class="min-w-full mySwiper"
+            class="mySwiper min-w-full"
             space-between="30"
             loop="true"
             autoplay-delay="0"
@@ -390,296 +396,264 @@
             }'
           >
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
           </swiper-container>
           <swiper-container
-            class="min-w-full mySwiper"
+            class="mySwiper min-w-full"
             space-between="30"
             loop="true"
             autoplay-delay="0"
@@ -718,290 +692,258 @@
           }'
           >
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
             <swiper-slide>
-              <div class="bg-mainWhite p-4 rounded-2xl w-full text-start">
-                <div class="flex justify-between items-start gap-2">
+              <div class="w-full rounded-2xl bg-mainWhite p-4 text-start">
+                <div class="flex items-start justify-between gap-2">
                   <div class="flex items-center gap-2">
                     <div
-                      class="flex justify-center items-center border-[1px] border-gray-400 p-1.5 rounded-full w-16 h-16 overflow-hidden shrink-0"
+                      class="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full border-[1px] border-gray-400 p-1.5"
                     >
                       <img
-                        src="./public/image/ostadpic.png"
+                        src="./image/ostadpic.png"
                         class="rounded-full object-cover"
                         alt="Ostad Profile Picture"
                       />
                     </div>
                     <div>
-                      <h3 class="text-gray-1 text-lg">حمیدرضا قبادی</h3>
-                      <p class="text-gray-2 text-sm">
+                      <h3 class="text-lg text-gray-1">حمیدرضا قبادی</h3>
+                      <p class="text-sm text-gray-2">
                         برنامه نویس و مدرس وردپرس
                       </p>
                     </div>
                   </div>
-                  <img src="./public/icons/quote.svg" alt="" />
+                  <img src="./icons/quote.svg" alt="" />
                 </div>
                 <div>
-                  <p class="py-2 text-gray-2 leading-[27px]">
+                  <p class="py-2 leading-[27px] text-gray-2">
                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
                     با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
                     و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
                   </p>
-                  <img
-                    src="./public/icons/fourStarRate.svg"
-                    class="mt-2 h-5"
-                    alt=""
-                  />
+                  <img src="./icons/fourStarRate.svg" class="mt-2 h-5" alt="" />
                 </div>
               </div>
             </swiper-slide>
@@ -1009,177 +951,154 @@
         </div>
       </div>
 
-      <div class="bg-mainWhite mt-40 w-full">
+      <div class="mt-40 w-full bg-mainWhite">
         <!-- student card container-->
         <div
-          class="flex flex-wrap justify-center xl:justify-between gap-5 mx-auto py-12 w-full xl:w-4/5 2xl:w-3/5"
+          class="mx-auto flex w-full flex-wrap justify-center gap-5 py-12 xl:w-4/5 xl:justify-between 2xl:w-3/5"
         >
           <!-- stu cards -->
-          <div class="bg-mainWhite shadow-2xl p-4 rounded-xl w-fit">
-            <div class="rounded-xl w-80 h-96">
+          <div class="w-fit rounded-xl bg-mainWhite p-4 shadow-2xl">
+            <div class="h-96 w-80 rounded-xl">
               <img
-                class="rounded-xl w-full h-full"
-                src="./public/image/ostadpic.png"
+                class="h-full w-full rounded-xl"
+                src="./image/ostadpic.png"
                 alt=""
               />
             </div>
             <div
-              class="flex flex-col justify-between gap-2 pt-3 w-full h-f text-center"
+              class="h-f flex w-full flex-col justify-between gap-2 pt-3 text-center"
             >
               <h3 class="text-gray-1">حمیدرضا قبادی</h3>
               <p class="text-purple-400">شرکت کننده دوره وردپرس</p>
-              <div class="flex justify-center items-center gap-2 text-gray-2">
+              <div class="flex items-center justify-center gap-2 text-gray-2">
                 <p>مشاهده دوره</p>
-                <img src="./public/icons/arrow-left.svg" alt="" />
+                <img src="./icons/arrow-left.svg" alt="" />
               </div>
             </div>
           </div>
 
-          <div class="bg-mainWhite shadow-2xl p-4 rounded-xl w-fit">
-            <div class="rounded-xl w-80 h-96">
+          <div class="w-fit rounded-xl bg-mainWhite p-4 shadow-2xl">
+            <div class="h-96 w-80 rounded-xl">
               <img
-                class="rounded-xl w-full h-full"
-                src="./public/image/ostadpic.png"
+                class="h-full w-full rounded-xl"
+                src="./image/ostadpic.png"
                 alt=""
               />
             </div>
             <div
-              class="flex flex-col justify-between gap-2 pt-3 w-full h-f text-center"
+              class="h-f flex w-full flex-col justify-between gap-2 pt-3 text-center"
             >
               <h3 class="text-gray-1">حمیدرضا قبادی</h3>
               <p class="text-purple-400">شرکت کننده دوره وردپرس</p>
-              <div class="flex justify-center items-center gap-2 text-gray-2">
+              <div class="flex items-center justify-center gap-2 text-gray-2">
                 <p>مشاهده دوره</p>
-                <img src="./public/icons/arrow-left.svg" alt="" />
+                <img src="./icons/arrow-left.svg" alt="" />
               </div>
             </div>
           </div>
-          <div class="bg-mainWhite shadow-2xl p-4 rounded-xl w-fit">
-            <div class="rounded-xl w-80 h-96">
+          <div class="w-fit rounded-xl bg-mainWhite p-4 shadow-2xl">
+            <div class="h-96 w-80 rounded-xl">
               <img
-                class="rounded-xl w-full h-full"
-                src="./public/image/ostadpic.png"
+                class="h-full w-full rounded-xl"
+                src="./image/ostadpic.png"
                 alt=""
               />
             </div>
             <div
-              class="flex flex-col justify-between gap-2 pt-3 w-full h-f text-center"
+              class="h-f flex w-full flex-col justify-between gap-2 pt-3 text-center"
             >
               <h3 class="text-gray-1">حمیدرضا قبادی</h3>
               <p class="text-purple-400">شرکت کننده دوره وردپرس</p>
-              <div class="flex justify-center items-center gap-2 text-gray-2">
+              <div class="flex items-center justify-center gap-2 text-gray-2">
                 <p>مشاهده دوره</p>
-                <img src="./public/icons/arrow-left.svg" alt="" />
+                <img src="./icons/arrow-left.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
         <!-- resume  -->
         <div
-          class="mx-auto mt-20 w-full lg:w-5/6 xl:w-4/5 2xl:w-4/6 text-center lg:text-3xl"
+          class="mx-auto mt-20 w-full text-center lg:w-5/6 lg:text-3xl xl:w-4/5 2xl:w-4/6"
         >
-          <h3 class="py-12 w-full text-2xl text-gray-1">
+          <h3 class="w-full py-12 text-2xl text-gray-1">
             نمونه کارهای دانشجویان آدور
           </h3>
           <!-- resume container -->
           <div
-            class="flex md:flex-row flex-col flex-wrap md:justify-center items-center md:items-center gap-3 gap-y-12 w-full"
+            class="flex w-full flex-col flex-wrap items-center gap-3 gap-y-12 md:flex-row md:items-center md:justify-center"
           >
             <!-- resume card -->
             <div
-              class="flex flex-col items-center bg-mainWhite shadow-mainShadow p-2 rounded-xl w-fit"
+              class="flex w-fit flex-col items-center rounded-xl bg-mainWhite p-2 shadow-mainShadow"
             >
-              <div class="flex justify-center items-center w-96 h-64">
-                <img
-                  src="./public/image/uiux.png"
-                  class="w-full h-full"
-                  alt=""
-                />
+              <div class="flex h-64 w-96 items-center justify-center">
+                <img src="./image/uiux.png" class="h-full w-full" alt="" />
               </div>
-              <div class="text-right py-3 w-full">
-                <h3 class="py-4 text-gray-2 text-xl">صحرا رستمی</h3>
-                <p class="text-gray-3 text-lg">شرکت کننده دوره ورد پرس</p>
+              <div class="w-full py-3 text-right">
+                <h3 class="py-4 text-xl text-gray-2">صحرا رستمی</h3>
+                <p class="text-lg text-gray-3">شرکت کننده دوره ورد پرس</p>
               </div>
             </div>
             <div
-              class="flex flex-col items-center bg-mainWhite shadow-mainShadow p-2 rounded-xl w-fit"
+              class="flex w-fit flex-col items-center rounded-xl bg-mainWhite p-2 shadow-mainShadow"
             >
-              <div class="flex justify-center items-center w-96 h-64">
-                <img
-                  src="./public/image/uiux.png"
-                  class="w-full h-full"
-                  alt=""
-                />
+              <div class="flex h-64 w-96 items-center justify-center">
+                <img src="./image/uiux.png" class="h-full w-full" alt="" />
               </div>
-              <div class="text-right py-3 w-full">
-                <h3 class="py-4 text-gray-2 text-xl">صحرا رستمی</h3>
-                <p class="text-gray-3 text-lg">شرکت کننده دوره ورد پرس</p>
+              <div class="w-full py-3 text-right">
+                <h3 class="py-4 text-xl text-gray-2">صحرا رستمی</h3>
+                <p class="text-lg text-gray-3">شرکت کننده دوره ورد پرس</p>
               </div>
             </div>
             <div
-              class="flex flex-col items-center bg-mainWhite shadow-mainShadow p-2 rounded-xl w-fit"
+              class="flex w-fit flex-col items-center rounded-xl bg-mainWhite p-2 shadow-mainShadow"
             >
-              <div class="flex justify-center items-center w-96 h-64">
-                <img
-                  src="./public/image/uiux.png"
-                  class="w-full h-full"
-                  alt=""
-                />
+              <div class="flex h-64 w-96 items-center justify-center">
+                <img src="./image/uiux.png" class="h-full w-full" alt="" />
               </div>
-              <div class="text-right py-3 w-full">
-                <h3 class="py-4 text-gray-2 text-xl">صحرا رستمی</h3>
-                <p class="text-gray-3 text-lg">شرکت کننده دوره ورد پرس</p>
+              <div class="w-full py-3 text-right">
+                <h3 class="py-4 text-xl text-gray-2">صحرا رستمی</h3>
+                <p class="text-lg text-gray-3">شرکت کننده دوره ورد پرس</p>
               </div>
             </div>
             <div
-              class="flex flex-col items-center bg-mainWhite shadow-mainShadow p-2 rounded-xl w-fit"
+              class="flex w-fit flex-col items-center rounded-xl bg-mainWhite p-2 shadow-mainShadow"
             >
-              <div class="flex justify-center items-center w-96 h-64">
-                <img
-                  src="./public/image/uiux.png"
-                  class="w-full h-full"
-                  alt=""
-                />
+              <div class="flex h-64 w-96 items-center justify-center">
+                <img src="./image/uiux.png" class="h-full w-full" alt="" />
               </div>
-              <div class="text-right py-3 w-full">
-                <h3 class="py-4 text-gray-2 text-xl">صحرا رستمی</h3>
-                <p class="text-gray-3 text-lg">شرکت کننده دوره ورد پرس</p>
+              <div class="w-full py-3 text-right">
+                <h3 class="py-4 text-xl text-gray-2">صحرا رستمی</h3>
+                <p class="text-lg text-gray-3">شرکت کننده دوره ورد پرس</p>
               </div>
             </div>
             <div
-              class="flex flex-col items-center bg-mainWhite shadow-mainShadow p-2 rounded-xl w-fit"
+              class="flex w-fit flex-col items-center rounded-xl bg-mainWhite p-2 shadow-mainShadow"
             >
-              <div class="flex justify-center items-center w-96 h-64">
-                <img
-                  src="./public/image/uiux.png"
-                  class="w-full h-full"
-                  alt=""
-                />
+              <div class="flex h-64 w-96 items-center justify-center">
+                <img src="./image/uiux.png" class="h-full w-full" alt="" />
               </div>
-              <div class="text-right py-3 w-full">
-                <h3 class="py-4 text-gray-2 text-xl">صحرا رستمی</h3>
-                <p class="text-gray-3 text-lg">شرکت کننده دوره ورد پرس</p>
+              <div class="w-full py-3 text-right">
+                <h3 class="py-4 text-xl text-gray-2">صحرا رستمی</h3>
+                <p class="text-lg text-gray-3">شرکت کننده دوره ورد پرس</p>
               </div>
             </div>
             <div
-              class="flex flex-col items-center bg-mainWhite shadow-mainShadow p-2 rounded-xl w-fit"
+              class="flex w-fit flex-col items-center rounded-xl bg-mainWhite p-2 shadow-mainShadow"
             >
-              <div class="flex justify-center items-center w-96 h-64">
-                <img
-                  src="./public/image/uiux.png"
-                  class="w-full h-full"
-                  alt=""
-                />
+              <div class="flex h-64 w-96 items-center justify-center">
+                <img src="./image/uiux.png" class="h-full w-full" alt="" />
               </div>
-              <div class="text-right py-3 w-full">
-                <h3 class="py-4 text-gray-2 text-xl">صحرا رستمی</h3>
-                <p class="text-gray-3 text-lg">شرکت کننده دوره ورد پرس</p>
+              <div class="w-full py-3 text-right">
+                <h3 class="py-4 text-xl text-gray-2">صحرا رستمی</h3>
+                <p class="text-lg text-gray-3">شرکت کننده دوره ورد پرس</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./node_modules/swiper/swiper-element-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
