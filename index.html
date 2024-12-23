@@ -9,13 +9,13 @@
   <body>
     <!-- header -->
     <header
-      class="relative lg:top-12 lg:left-1/2 z-50 lg:fixed bg-mainWhite mx-auto lg:rounded-[32px] w-full lg:w-4/5 lg:-translate-x-1/2"
+      class="relative z-50 mx-auto w-full bg-mainWhite lg:fixed lg:left-1/2 lg:top-12 lg:w-4/5 lg:-translate-x-1/2 lg:rounded-[32px]"
     >
-      <div class="lg:px-6 p-4 w-full h-full">
+      <div class="h-full w-full p-4 lg:px-6">
         <!-- top part -->
-        <div class="flex justify-between items-center w-full">
+        <div class="flex w-full items-center justify-between">
           <!-- right -->
-          <div class="flex justify-between items-center gap-2">
+          <div class="flex items-center justify-between gap-2">
             <button id="sidebarBtn" class="lg:hidden">
               <img src="./public/icons/burgurmenu.svg" alt="" />
             </button>
@@ -26,27 +26,27 @@
           </div>
           <!-- desktop search part -->
           <div
-            class="lg:flex justify-between items-center hidden rounded-3xl w-1/2 h-[40px] lightGrayBorder"
+            class="lightGrayBorder hidden h-[40px] w-1/2 items-center justify-between rounded-3xl lg:flex"
           >
             <div
-              class="flex items-center gap-2 px-3 p-2 border-l-2 w-4/6 h-full"
+              class="flex h-full w-4/6 items-center gap-2 border-l-2 p-2 px-3"
             >
               <button class="burgurBtn">
                 <img src="./public/icons/search-ico-normal.svg" alt="" />
               </button>
               <input
                 type="text"
-                class="bg-transparent w-full h-full"
+                class="h-full w-full bg-transparent"
                 placeholder="جستجو"
               />
             </div>
             <div
-              class="flex justify-center items-center px-0 iphoneSe:px-3 w-2/6"
+              class="flex w-2/6 items-center justify-center px-0 iphoneSe:px-3"
             >
               <select
                 name=""
                 id=""
-                class="text-[8px] text-gray-3 text-wrap iphoneSe:text-xs"
+                class="text-wrap text-[8px] text-gray-3 iphoneSe:text-xs"
               >
                 <option value="">تمام دسته بندی ها</option>
               </select>
@@ -56,10 +56,10 @@
           <div>
             <a
               href="tel:09021702103"
-              class="flex gap-1 bg-purple-100 px-3 py-2 rounded-xl text-gray-3 iranNum"
+              class="iranNum flex gap-1 rounded-xl bg-purple-100 px-3 py-2 text-gray-3"
             >
               <img src="./public/icons/headphoneicon.svg" alt="support" />
-              <p class="md:block hidden">پشتیبانی :</p>
+              <p class="hidden md:block">پشتیبانی :</p>
               <span>09021702103</span>
             </a>
           </div>
@@ -67,9 +67,9 @@
         <!-- seprator -->
         <div class="sepratorLine"></div>
         <!-- bottom part -->
-        <div class="flex justify-center lg:justify-between items-center w-full">
+        <div class="flex w-full items-center justify-center lg:justify-between">
           <div
-            class="md:flex gap-2 hidden sm:w-4/12 lg:w-fit cursor-pointer"
+            class="hidden cursor-pointer gap-2 sm:w-4/12 md:flex lg:w-fit"
             id="arrowIcon"
           >
             <img src="./public/icons/foursquare.svg" alt="دوره های آموزشی" />
@@ -81,7 +81,7 @@
             />
           </div>
           <!-- desktop nav -->
-          <nav class="lg:block hidden">
+          <nav class="hidden lg:block">
             <ul class="flex gap-2">
               <li class="meniItemLi meniItemLiActive">
                 <a href="#">خانه</a>
@@ -101,7 +101,7 @@
             </ul>
           </nav>
           <!-- desktop tutorials -->
-          <p class="lg:block hidden text-gray-2">
+          <p class="hidden text-gray-2 lg:block">
             <a href="#" class="flex gap-2">
               <img src="./public/icons/usericon.svg" alt="tutorial" />
               <span>دوره های خریداری شده</span>
@@ -109,28 +109,28 @@
             </a>
           </p>
           <div
-            class="flex justify-between items-center lg:hidden rounded-3xl w-full md:w-8/12 h-[40px] lightGrayBorder"
+            class="lightGrayBorder flex h-[40px] w-full items-center justify-between rounded-3xl md:w-8/12 lg:hidden"
           >
             <div
-              class="flex items-center gap-2 px-3 p-2 border-l-2 w-4/6 h-full"
+              class="flex h-full w-4/6 items-center gap-2 border-l-2 p-2 px-3"
             >
               <button class="burgurBtn">
                 <img src="./public/icons/search-ico-normal.svg" alt="search" />
               </button>
               <input
                 type="text"
-                class="bg-transparent w-full h-full"
+                class="h-full w-full bg-transparent"
                 placeholder="جستجو"
               />
             </div>
 
             <div
-              class="flex justify-center items-center px-0 iphoneSe:px-3 w-2/6"
+              class="flex w-2/6 items-center justify-center px-0 iphoneSe:px-3"
             >
               <select
                 name=""
                 id=""
-                class="text-[8px] text-gray-3 text-wrap iphoneSe:text-xs"
+                class="text-wrap text-[8px] text-gray-3 iphoneSe:text-xs"
               >
                 <option value="">تمام دسته بندی ها</option>
               </select>
@@ -139,11 +139,11 @@
         </div>
         <!-- desktop tutorial sidebar  -->
         <div
-          class="top-[110%] left-0 absolute hidden bg-mainWhite p-10 rounded-[32px] w-full h-[536px] scrollAnimate"
+          class="scrollAnimate absolute left-0 top-[110%] hidden h-[536px] w-full rounded-[32px] bg-mainWhite p-10"
           id="tutorialSidebar"
         >
           <div
-            class="flex justify-between items-center border-purple-300 pb-4 border-b-2 border-dashed w-full h-4/5"
+            class="flex h-4/5 w-full items-center justify-between border-b-2 border-dashed border-purple-300 pb-4"
           >
             <div class="flex flex-col gap-14">
               <div class="flex items-center gap-4">
@@ -219,13 +219,13 @@
             </div>
           </div>
 
-          <div class="flex justify-start items-center pr-5 w-full h-1/5">
+          <div class="flex h-1/5 w-full items-center justify-start pr-5">
             <p>
               <a href="#" class="relative flex gap-2"
                 ><span class="relative z-10">مشاهده همه دوره ها</span>
                 <img src="./public/icons/arrow-left.svg" alt="" />
                 <div
-                  class="right-[3.5%] -z-4 absolute bg-purple-300 rounded-full w-14 h-14"
+                  class="-z-4 absolute right-[3.5%] h-14 w-14 rounded-full bg-purple-300"
                 ></div>
               </a>
             </p>
@@ -233,17 +233,17 @@
         </div>
       </div>
       <div
-        class="top-0 -right-full z-10 absolute bg-gray-7 w-9/12 h-screen transition-all duration-300 sidebar"
+        class="sidebar absolute -right-full top-0 z-10 h-screen w-9/12 bg-gray-7 transition-all duration-300"
       >
         <!--  -->
         <div
-          class="flex items-center gap-2 bg-mainWhite shadow-md p-3.5 w-full font-semibold text-sm"
+          class="flex w-full items-center gap-2 bg-mainWhite p-3.5 text-sm font-semibold shadow-md"
           id="sidebarClose"
         >
           <img src="./public/icons/arrow-right.svg" alt="" />
           <p>بازگشت به آکادو</p>
         </div>
-        <div class="px-3.5 pt-3 w-full h-[calc(100vh_-_44px)]">
+        <div class="h-[calc(100vh_-_44px)] w-full px-3.5 pt-3">
           <div class="flex items-center gap-1 py-2 text-sm">
             <img src="./public/icons/usericon.svg" alt="tutorials" />
             <p>دوره های خریداری شده</p>
@@ -256,36 +256,36 @@
           </div>
           <div class="sepratorLine"></div>
           <div class="text-sm">
-            <div class="flex items-center gap-2 text-purple-600 text-sm">
+            <div class="flex items-center gap-2 text-sm text-purple-600">
               <img src="./public/icons/purpleLine.svg" alt="" />
               <h3>خانه</h3>
             </div>
             <div class="mt-3 w-full">
               <nav>
-                <div class="py-2 w-full">
+                <div class="w-full py-2">
                   <a href="#">نظرات دانشجویان</a>
                 </div>
-                <div class="py-2 w-full"><a href="#">درباره ما</a></div>
-                <div class="py-2 w-full"><a href="#">تماس با ما</a></div>
-                <div class="py-2 w-full"><a href="#">بلاگ</a></div>
+                <div class="w-full py-2"><a href="#">درباره ما</a></div>
+                <div class="w-full py-2"><a href="#">تماس با ما</a></div>
+                <div class="w-full py-2"><a href="#">بلاگ</a></div>
               </nav>
             </div>
           </div>
         </div>
         <!-- tutorials -->
         <div
-          class="top-0 -right-full z-10 absolute bg-mainWhite w-full h-screen transition-all"
+          class="absolute -right-full top-0 z-10 h-screen w-full bg-mainWhite transition-all"
           id="tutorialsSidebar"
         >
           <div
-            class="flex items-center gap-2 bg-mainWhite shadow-md p-3.5 w-full font-semibold text-sm transition-all"
+            class="flex w-full items-center gap-2 bg-mainWhite p-3.5 text-sm font-semibold shadow-md transition-all"
             id="tutorialsSidebarBtn"
           >
             <img src="./public/icons/arrow-right.svg" alt="" />
             <!-- id="tutorialsCloseBtn" -->
             <button>بازگشت به منوی اصلی</button>
           </div>
-          <div class="px-3.5 pt-3 w-full h-full">
+          <div class="h-full w-full px-3.5 pt-3">
             <div class="flex items-center gap-2 py-3 pb-8 text-sm">
               <img src="./public/icons/foursquare.svg" alt="" />
               <p>دوره های آموزشی</p>
@@ -319,30 +319,30 @@
         </div>
       </div>
       <div
-        class="top-0 left-0 z-0 absolute hidden backdrop-blur-[1px] blur-lg w-screen h-screen"
+        class="absolute left-0 top-0 z-0 hidden h-screen w-screen blur-lg backdrop-blur-[1px]"
         id="blurDiv"
       ></div>
     </header>
-    <div class="relative bg-gradient-homePage w-full h-[900px]">
+    <div class="relative h-[900px] w-full bg-gradient-homePage">
       <!-- <div class="lg:block hidden w-full h-[20vh] lg:h-[13vh]"></div> -->
       <!-- container -->
       <!-- relative flex bg- bg-yellow-200 mx-auto lg:pt-52 lg:w-4/5  -->
-      <div class="mx-auto lg:pt-72 lg:w-4/5 h-[100%]">
+      <div class="mx-auto h-[100%] lg:w-4/5 lg:pt-72">
         <img
           src="./public/image/shockedwoman.png"
-          class="xl:block bottom-0 left-1/2 -z-1 absolute hidden w-[450px] -translate-x-1/2"
+          class="-z-1 absolute bottom-0 left-1/2 hidden w-[450px] -translate-x-1/2 xl:block"
           alt=""
         />
-        <div class="relative px-6 pt-12 xl:w-1/2 h-full">
-          <h1 class="lg:w-[500px] text-4xl md:text-5xl md:leading-[55px]">
+        <div class="relative h-full px-6 pt-12 xl:w-1/2">
+          <h1 class="text-4xl md:text-5xl md:leading-[55px] lg:w-[500px]">
             داستان برنامه‌نویس شدنت از اینجا شروع میشه!
           </h1>
-          <p class="py-6 md:w-96 xl:w-[470px] text-gray-3 text-justify text-lg">
+          <p class="py-6 text-justify text-lg text-gray-3 md:w-96 xl:w-[470px]">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
             استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی
           </p>
           <button
-            class="flex justify-center items-center gap-2 bg-gradient-homePage-button p-[9px] rounded-[35px] w-[212px] h-[48px] text-lg text-mainWhite"
+            class="flex h-[48px] w-[212px] items-center justify-center gap-2 rounded-[35px] bg-gradient-homePage-button p-[9px] text-lg text-mainWhite"
           >
             انتخاب دوره آموزشی
             <img
@@ -450,63 +450,63 @@
     </div>
     <!-- about -->
     <div
-      class="relative -top-16 lg:-top-32 z-0 flex lg:flex-row flex-col flex-nowrap justify-center items-center xl:gap-8 bg-purple-500 mx-auto p-0 md:p-6 rounded-[32px] w-fit xl:w-4/5 h-full"
+      class="relative -top-16 z-0 mx-auto flex h-full w-fit flex-col flex-nowrap items-center justify-center rounded-[32px] bg-purple-500 p-0 md:p-6 lg:-top-32 lg:flex-row xl:w-4/5 xl:gap-8"
     >
-      <div class="xl:flex gap-8">
+      <div class="gap-8 xl:flex">
         <div
-          class="border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite xl:text-start"
+          class="border-b-2 border-purple-400 text-center text-mainWhite lg:border-b-0 lg:border-l-2 lg:p-10 lg:pb-2 xl:p-0 xl:text-start"
         >
           <img
             src="./public/icons/about-medal.svg"
             alt=""
-            class="block xl:inline-block mx-auto w-[86px]"
+            class="mx-auto block w-[86px] xl:inline-block"
           />
-          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+          <h2 class="text-lg 2xl:px-5">اساتید مجرب و ماهر</h2>
+          <p class="w-96 py-2 xl:w-auto 2xl:px-5">
             توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
             مختصر در خصوص این ویژگی
           </p>
         </div>
         <div
-          class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 lg:border-l-2 text-center text-mainWhite"
+          class="border-b-2 border-purple-400 text-center text-mainWhite lg:border-b-0 lg:border-l-2 lg:p-10 lg:pb-2 xl:p-0 xl:text-right"
         >
           <img
             src="./public/icons/about-user--ico.svg"
             alt=""
-            class="block xl:inline-block mx-auto"
+            class="mx-auto block xl:inline-block"
           />
-          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+          <h2 class="text-lg 2xl:px-5">اساتید مجرب و ماهر</h2>
+          <p class="w-96 py-2 xl:w-auto 2xl:px-5">
             توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
             مختصر در خصوص این ویژگی
           </p>
         </div>
       </div>
-      <div class="xl:flex gap-8">
+      <div class="gap-8 xl:flex">
         <div
-          class="xl:text-right border-purple-400 lg:p-10 xl:p-0 lg:pb-2 border-b-2 lg:border-b-0 xl:border-l-2 text-center text-mainWhite"
+          class="border-b-2 border-purple-400 text-center text-mainWhite lg:border-b-0 lg:p-10 lg:pb-2 xl:border-l-2 xl:p-0 xl:text-right"
         >
           <img
             src="./public/icons/about-samunet-ico.svg"
             alt=""
-            class="block xl:inline-block mx-auto"
+            class="mx-auto block xl:inline-block"
           />
-          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+          <h2 class="text-lg 2xl:px-5">اساتید مجرب و ماهر</h2>
+          <p class="w-96 py-2 xl:w-auto 2xl:px-5">
             توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
             مختصر در خصوص این ویژگی
           </p>
         </div>
         <div
-          class="xl:text-right px-2 lg:p-10 xl:p-0 lg:pb-2 text-center text-mainWhite"
+          class="px-2 text-center text-mainWhite lg:p-10 lg:pb-2 xl:p-0 xl:text-right"
         >
           <img
             src="./public/icons/about-user--ico.svg"
             alt=""
-            class="block xl:inline-block mx-auto"
+            class="mx-auto block xl:inline-block"
           />
-          <h2 class="2xl:px-5 text-lg">اساتید مجرب و ماهر</h2>
-          <p class="2xl:px-5 py-2 w-96 xl:w-auto">
+          <h2 class="text-lg 2xl:px-5">اساتید مجرب و ماهر</h2>
+          <p class="w-96 py-2 xl:w-auto 2xl:px-5">
             توضیحات خیلی کوتاه و مختصر در خصوص این ویژگی. توضیحات خیلی کوتاه و
             مختصر در خصوص این ویژگی
           </p>
@@ -515,117 +515,117 @@
     </div>
     <!-- categories -->
     <p
-      class="bg-purple-100 mx-auto mb-4 px-3 py-1.5 rounded-[26px] w-fit text-center text-gray-2 text-sm"
+      class="mx-auto mb-4 w-fit rounded-[26px] bg-purple-100 px-3 py-1.5 text-center text-sm text-gray-2"
     >
       موضوعات آموزش
     </p>
-    <h2 class="my-8 text-3xl text-center leading-[35px]">
+    <h2 class="my-8 text-center text-3xl leading-[35px]">
       آموزش های آدور شامل چه مباحثی می شود؟!
     </h2>
     <!-- tutorials -->
     <div
-      class="justify-between gap-6 grid grid-cols-2 xl:grid-cols-4 mx-auto w-full lg:w-3/5 h-full"
+      class="mx-auto grid h-full w-full grid-cols-2 justify-between gap-6 lg:w-3/5 xl:grid-cols-4"
     >
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/terminalIco.svg"
-          class="box-content bg-greenIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-greenIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
       </div>
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/brainIco.svg"
-          class="box-content bg-blueIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-blueIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
       </div>
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/moneyIco.svg"
-          class="box-content bg-goldIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-goldIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
       </div>
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/movieIco.svg"
-          class="box-content bg-purpleIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-purpleIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
       </div>
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/uiuxico.svg"
-          class="box-content bg-redIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-redIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
       </div>
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/computerico.svg"
-          class="box-content bg-goldIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-goldIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
       </div>
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/searchIco-menu.svg"
-          class="box-content bg-lowGreenIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-lowGreenIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
       </div>
       <div
-        class="flex flex-col justify-center items-center gap-3 bg-mainWhite shadow-xl p-6 rounded-2xl w-full"
+        class="flex w-full flex-col items-center justify-center gap-3 rounded-2xl bg-mainWhite p-6 shadow-xl"
       >
         <img
           src="./public/icons/wordpressico.svg"
-          class="box-content bg-blueIco p-2 rounded-lg w-1/3 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
+          class="box-content w-1/3 rounded-lg bg-blueIco p-2 md:w-1/6 lg:w-1/5 xl:w-1/3 2xl:w-1/5"
           alt=""
         />
-        <h2 class="font-extrabold text-lg">طراحی سایت بک اند</h2>
+        <h2 class="text-lg font-extrabold">طراحی سایت بک اند</h2>
         <p class="flex items-center gap-2 text-gray-2">
           <span>23 دوره</span><img src="./public/icons/arrow-left.svg" alt="" />
         </p>
@@ -633,33 +633,33 @@
     </div>
     <!-- sign up -->
     <div
-      class="flex lg:flex-row flex-col-reverse justify-center items-end gap-3 bg-purple-500 mt-52 px-8 pt-12 w-full"
+      class="mt-52 flex w-full flex-col-reverse items-end justify-center gap-3 bg-purple-500 px-8 pt-12 lg:flex-row"
     >
-      <div class="relative w-full lg:w-1/2 xl:w-1/3 h-full">
+      <div class="relative h-full w-full lg:w-1/2 xl:w-1/3">
         <img
           src="./public/image/clean-code.png"
-          class="relative -top-28 right-1/2 lg:right-10 z-10 translate-x-1/2 lg:translate-x-0"
+          class="relative -top-28 right-1/2 z-10 translate-x-1/2 lg:right-10 lg:translate-x-0"
           alt=""
         />
 
         <img
           src="./public/image/smallpngs.png"
-          class="right-1/2 lg:right-0 bottom-0 absolute translate-x-1/2 lg:translate-x-0"
+          class="absolute bottom-0 right-1/2 translate-x-1/2 lg:right-0 lg:translate-x-0"
           alt=""
         />
 
         <img
           src="./public/image/whiteTable.png"
-          class="right-1/2 lg:right-0 -bottom-0 absolute translate-x-1/2 lg:translate-x-0"
+          class="absolute -bottom-0 right-1/2 translate-x-1/2 lg:right-0 lg:translate-x-0"
           alt=""
         />
       </div>
-      <div class="pb-8 w-full lg:w-1/2 xl:w-1/3 h-full text-mainWhite">
+      <div class="h-full w-full pb-8 text-mainWhite lg:w-1/2 xl:w-1/3">
         <h3 class="mb-4 text-4xl leading-[50px]">
           از ثبت نام دوره جدید طراحی سایت جا نمونی!
         </h3>
         <div class="w-full">
-          <div class="lg:flex gap-16 w-full">
+          <div class="w-full gap-16 lg:flex">
             <div class="flex items-center gap-2 py-3 lg:text-xl">
               <img src="./public/icons/clock.svg" alt="" />
               <p>12 ساعت آموزش</p>
@@ -674,7 +674,7 @@
             <p>امکان حضور در کلاس به صورت آنلاین</p>
           </div>
           <button
-            class="bg-mainWhite my-3 mb-24 lg:mb-0 px-5 py-3 rounded-[35px] text-lg text-purple-500"
+            class="my-3 mb-24 rounded-[35px] bg-mainWhite px-5 py-3 text-lg text-purple-500 lg:mb-0"
           >
             همین حالا ثبت نام کن!
           </button>
@@ -682,40 +682,40 @@
       </div>
     </div>
     <!-- newest -->
-    <div class="bg-lightBgPurple pb-20 w-full">
+    <div class="w-full bg-lightBgPurple pb-20">
       <div
-        class="flex flex-col justify-center items-center md:items-start md:gap-6 bg-red-500 mx-auto px-8 lg:px-0 py-12 w-full lg:w-4/5"
+        class="mx-auto flex w-full flex-col items-center justify-center px-8 py-12 md:items-start md:gap-6 lg:w-4/5 lg:px-0"
       >
         <div>
           <div
-            class="bg-mainWhite px-4 py-[12px] rounded-[26px] w-fit text-gray-2"
+            class="w-fit rounded-[26px] bg-mainWhite px-4 py-[12px] text-gray-2"
           >
             <p>جدیدترین دوره ها</p>
           </div>
         </div>
-        <div class="my-4 text-3xl text-center lg:text-4xl leading-[40px]">
+        <div class="my-4 text-center text-3xl leading-[40px] lg:text-4xl">
           <h2>جدید ترین دوره های آدور رو از دست نده!</h2>
         </div>
         <div
-          class="flex justify-center md:justify-between items-center gap-4 w-full"
+          class="flex w-full items-center justify-center gap-4 md:justify-between"
         >
           <div class="flex">
             <div class="newestBtn"><p>پرفروش ترین ها</p></div>
             <div class="newestBtn"><p>محبوب ترین ها</p></div>
             <div class="activeNewestBtn newestBtn"><p>جدیدترین ها</p></div>
           </div>
-          <div class="relative md:flex items-center gap-3 hidden text-gray-2">
+          <div class="relative hidden items-center gap-3 text-gray-2 md:flex">
             <p class="relative z-10">مشاهده همه دوره ها</p>
             <img src="./public/icons/arrow-left.svg" alt="" />
             <div
-              class="-right-5 -z-1 absolute bg-purple-300 rounded-full w-[56px] h-[56px]"
+              class="-z-1 absolute -right-5 h-[56px] w-[56px] rounded-full bg-purple-300"
             ></div>
           </div>
         </div>
       </div>
       <!-- cards container -->
       <div
-        class="flex flex-wrap justify-center items-center gap-8 bg-lightBgPurple mt-12 w-full"
+        class="mt-12 flex w-full flex-wrap items-center justify-center gap-8 bg-lightBgPurple"
       >
         <!-- card -->
         <div class="tutorialCard">
@@ -848,12 +848,12 @@
     </div>
     <!-- done -->
     <div
-      class="flex lg:flex-row flex-col-reverse mx-auto px-8 py-16 w-full md:w-4/5 xl:w-3/5 max-w-[1920px]"
+      class="mx-auto flex w-full max-w-[1920px] flex-col-reverse px-8 py-16 md:w-4/5 lg:flex-row xl:w-3/5"
     >
       <div class="w-full lg:w-1/2">
         <div class="w-full">
           <p
-            class="bg-purple-100 my-4 px-3 py-2 rounded-full w-fit text-gray-2"
+            class="my-4 w-fit rounded-full bg-purple-100 px-3 py-2 text-gray-2"
           >
             دوره ها
           </p>
@@ -866,7 +866,7 @@
             ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز!
           </p>
         </div>
-        <div class="flex flex-col gap-5 mt-8 w-full font-bold text-lg">
+        <div class="mt-8 flex w-full flex-col gap-5 text-lg font-bold">
           <div class="flex items-center gap-3">
             <img src="./public/icons/tick-circle.svg" alt="" />
             <p>ارایه مدرک از فنی حرفه ای بعد از اتمام دوره</p>
@@ -880,46 +880,46 @@
             <p>پروژه محور بودن دوره ها</p>
           </div>
           <div
-            class="relative flex justify-start items-center mt-24 w-full h-1/5"
+            class="relative mt-24 flex h-1/5 w-full items-center justify-start"
           >
             <p>
               <a href="#" class="relative flex gap-2 text-gray-2"
                 ><span class="relative z-10 pr-4">بیشتر بخوانید </span>
                 <img src="./public/icons/arrow-left.svg" alt="" />
                 <div
-                  class="right-[0] -z-4 absolute bg-purple-300 rounded-full w-14 h-14"
+                  class="-z-4 absolute right-[0] h-14 w-14 rounded-full bg-purple-300"
                 ></div>
               </a>
             </p>
           </div>
         </div>
       </div>
-      <div class="relative pt-14 lg:pt-0 w-full lg:w-1/2">
+      <div class="relative w-full pt-14 lg:w-1/2 lg:pt-0">
         <img
           src="./public/image/manLaptop.png"
-          class="relative right-1/2 bottom-0 z-20 lg:absolute w-[350px] translate-x-1/2"
+          class="relative bottom-0 right-1/2 z-20 w-[350px] translate-x-1/2 lg:absolute"
           alt=""
         />
         <img
           src="./public/image/handShake.png "
-          class="lg:block left-0 z-10 absolute hidden w-[250px]"
+          class="absolute left-0 z-10 hidden w-[250px] lg:block"
           alt=""
         />
         <img
           src="./public/image/pinkpaper.png "
-          class="lg:block top-10 right-0 z-10 absolute hidden w-[200px]"
+          class="absolute right-0 top-10 z-10 hidden w-[200px] lg:block"
           alt=""
         />
       </div>
     </div>
     <div
-      class="xl:flex bg-purple-500 mx-auto mt-24 px-12 py-12 w-full max-w-[1920px] xl:h-[400px] text-mainWhite jus"
+      class="jus mx-auto mt-24 w-full max-w-[1920px] bg-purple-500 px-12 py-12 text-mainWhite xl:flex xl:h-[400px]"
     >
       <div class="flex flex-col gap-3 xl:w-1/2 2xl:w-1/2">
         <h3 class="pb-12 text-4xl">صفحه اینستاگرام آدور</h3>
-        <div class="gap-6 w-full">
-          <div class="flex xl:flex-row flex-col gap-3">
-            <div class="flex items-center gap-2 w-96 text-lg">
+        <div class="w-full gap-6">
+          <div class="flex flex-col gap-3 xl:flex-row">
+            <div class="flex w-96 items-center gap-2 text-lg">
               <img src="./public/icons/earthIcon.svg" alt="" />
               <p>آخرین اخبار دنیای طراحی و برنامه نویسی</p>
             </div>
@@ -928,8 +928,8 @@
               <p>دسترسی به جدیدترین مقالات</p>
             </div>
           </div>
-          <div class="flex xl:flex-row flex-col gap-3 mt-3">
-            <div class="flex items-center gap-2 w-96 text-lg">
+          <div class="mt-3 flex flex-col gap-3 xl:flex-row">
+            <div class="flex w-96 items-center gap-2 text-lg">
               <img src="./public/icons/coponIco.svg" alt="" />
               <p>اطلاع از تخفیفات ویژه دوره ها</p>
             </div>
@@ -940,7 +940,7 @@
           </div>
         </div>
         <div
-          class="flex justify-center items-center bg-mainWhite my-10 px-8 rounded-full w-full md:max-w-fit h-[48px] text-purple-700"
+          class="my-10 flex h-[48px] w-full items-center justify-center rounded-full bg-mainWhite px-8 text-purple-700 md:max-w-fit"
         >
           <p>همین حالا ثبت نام کن!</p>
         </div>
@@ -949,21 +949,21 @@
       <div class="relative w-full xl:w-1/2">
         <img
           src="./public/image/instaImage.png"
-          class="relative top-12 xl:-top-40 right-1/2 xl:absolute md:w-[700px] lg:w-[500px] translate-x-1/2"
+          class="relative right-1/2 top-12 translate-x-1/2 md:w-[700px] lg:w-[500px] xl:absolute xl:-top-40"
           alt=""
         />
       </div>
       <!-- masters -->
     </div>
-    <div class="bg-mainWhiteSmoke py-24 w-full text-center">
+    <div class="w-full bg-mainWhiteSmoke py-24 text-center">
       <p
-        class="bg-mainWhite mx-auto my-5 px-5 py-3 rounded-3xl w-fit text-center text-gray-2"
+        class="mx-auto my-5 w-fit rounded-3xl bg-mainWhite px-5 py-3 text-center text-gray-2"
       >
         اساتید
       </p>
       <p class="text-3xl">اساتید با استاتید آدور آشنا شوید!</p>
       <!-- card cotainer -->
-      <div class="flex justify-center items-center gap-6 mt-12 w-full"></div>
+      <div class="mt-12 flex w-full items-center justify-center gap-6"></div>
       <swiper-container
         class="mySwiper"
         pagination="true"
@@ -1079,11 +1079,11 @@
     </div>
     <div class="mt-12 w-full text-center">
       <p
-        class="bg-pur bg-purple-100 mx-auto px-4 py-3 rounded-full w-fit text-gray-2"
+        class="bg-pur mx-auto w-fit rounded-full bg-purple-100 px-4 py-3 text-gray-2"
       >
         مقالات
       </p>
-      <p class="mx-auto py-4 pb-12 w-fit text-2xl text-gray-1">
+      <p class="mx-auto w-fit py-4 pb-12 text-2xl text-gray-1">
         آخرین مقالات منتشر شده در بلاگ
       </p>
       <swiper-container
@@ -1156,23 +1156,23 @@
 
       <!-- blog container -->
     </div>
-    <footer class="relative bg-purple-50 mt-80 w-full">
+    <footer class="relative mt-80 w-full bg-purple-50">
       <div
-        class="-top-48 right-1/2 absolute flex bg-purple-500 mx-auto p-8 rounded-2xl w-5/6 translate-x-1/2"
+        class="absolute -top-48 right-1/2 mx-auto flex w-5/6 translate-x-1/2 rounded-2xl bg-purple-500 p-8"
       >
         <div>
           <img
             src="./public/image/chat.png"
-            class="-top-14 md:-top-24 lg:-top-14 -left-5 md:left-12 lg:left-32 absolute md:w-[220px]"
+            class="absolute -left-5 -top-14 md:-top-24 md:left-12 md:w-[220px] lg:-top-14 lg:left-32"
             alt=""
           />
           <h2 class="py-10 text-2xl text-mainWhite">نیاز به مشاوره دارید؟</h2>
-          <p class="text-lg text-mainWhite leading-[32px]">
+          <p class="text-lg leading-[32px] text-mainWhite">
             اگر برای شروع مسیرت نیاز به راهنمایی داری, مشاور های آدور می تونن
             رایگان کمکت کنن!
           </p>
           <div
-            class="flex justify-between items-center gap-2 pt-4 text-mainWhite"
+            class="flex items-center justify-between gap-2 pt-4 text-mainWhite"
           >
             <div class="flex items-center gap-3 md:text-xl">
               <img
@@ -1192,32 +1192,32 @@
             </div>
           </div>
         </div>
-        <div class="md:block hidden w-1/2"></div>
+        <div class="hidden w-1/2 md:block"></div>
       </div>
-      <div class="bg-purple-50 mx-auto pt-40 w-5/6">
-        <div class="lg:flex justify-center">
-          <div class="border-mainWhite px-8 py-5 border-b-2 lg:w-1/3">
+      <div class="mx-auto w-5/6 bg-purple-50 pt-40">
+        <div class="justify-center lg:flex">
+          <div class="border-b-2 border-mainWhite px-8 py-5 lg:w-1/3">
             <img src="./public/adorLogo.svg" alt="" class="md:px-24 lg:px-0" />
             <p
-              class="lg:text-right mt-4 md:px-24 lg:px-0 text-gray-2 md:text-center leading-[27px]"
+              class="mt-4 leading-[27px] text-gray-2 md:px-24 md:text-center lg:px-0 lg:text-right"
             >
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
               استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است و
             </p>
           </div>
-          <div class="md:flex justify-evenly items-center mx-auto w-full">
+          <div class="mx-auto w-full items-center justify-evenly md:flex">
             <div
-              class="border-mainWhite px-8 py-5 border-b-2 w-fit lg:h-4/5 text-gray-2"
+              class="w-fit border-b-2 border-mainWhite px-8 py-5 text-gray-2 lg:h-4/5"
             >
-              <h3 class="py-2 text-gray-1 text-xl">با ما در ارتباط باشید</h3>
-              <p class="flex lg:w-80 text-gray-2 leading-[27px]">
+              <h3 class="py-2 text-xl text-gray-1">با ما در ارتباط باشید</h3>
+              <p class="flex leading-[27px] text-gray-2 lg:w-80">
                 <span
                   ><img src="./public/icons/location.svg" class="w-10" alt=""
                 /></span>
                 تهران، شهرک استقلال، خیابان شهید شفیعی، نبش عاشری، پلاک 4 (ایفا)
               </p>
-              <div class="flex lg:flex-col gap-2 my-3">
+              <div class="my-3 flex gap-2 lg:flex-col">
                 <div class="flex">
                   <img src="./public/icons/call.svg" alt="" />
                   <p>02191017510</p>
@@ -1229,18 +1229,18 @@
               </div>
             </div>
             <div
-              class="flex justify-between items-center border-mainWhite px-8 py-5 border-b-2 w-full lg:w-3/6 text-gray-1"
+              class="flex w-full items-center justify-between border-b-2 border-mainWhite px-8 py-5 text-gray-1 lg:w-3/6"
             >
               <div>
                 <h2 class="my-2 text-xl">شبکه های اجتمایی</h2>
-                <div class="flex items-center gap-2 py-2 text-gray-2 text-lg">
+                <div class="flex items-center gap-2 py-2 text-lg text-gray-2">
                   <img src="./public/icons/instaIco.svg" class="w-12" alt="" />
                   <p>اینستاگرام</p>
                 </div>
                 <div class="flex items-center gap-2 py-2 text-gray-2">
                   <img
                     src="./public/icons/linkdin.svg"
-                    class="p-2 w-12"
+                    class="w-12 p-2"
                     alt=""
                   />
                   <p>لینکدین</p>
@@ -1256,10 +1256,10 @@
               </div>
               <div>
                 <h2 class="mb-4 text-xl">شبکه های اجتمایی</h2>
-                <div class="flex items-center gap-2 py-2 text-gray-2 text-lg">
+                <div class="flex items-center gap-2 py-2 text-lg text-gray-2">
                   <img
                     src="./public/icons/grammerly.svg"
-                    class="p-1 w-10"
+                    class="w-10 p-1"
                     alt=""
                   />
                   <p>درباره ما</p>
@@ -1267,7 +1267,7 @@
                 <div class="flex items-center gap-2 py-2 text-gray-2">
                   <img
                     src="./public/icons/Category.svg"
-                    class="p-1 w-10"
+                    class="w-10 p-1"
                     alt=""
                   />
                   <p>دوره ها</p>
@@ -1275,7 +1275,7 @@
                 <div class="flex items-center gap-2 py-2 text-gray-2">
                   <img
                     src="./public/icons/usericon.svg"
-                    class="p-1 w-10"
+                    class="w-10 p-1"
                     alt=""
                   />
                   <p>اساتید</p>
